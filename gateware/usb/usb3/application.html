@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application &mdash; SOL 0.1.1.dev172 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/platformpicker.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
+    <link rel="canonical" href="https://shrine-maiden-heavy-industries.github.io/sol/gateware/usb/usb3/application.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/platformpicker.js"></script>
+        <script src="../../../_static/wavedrom.skin.js"></script>
+        <script src="../../../_static/wavedrom.min.js"></script>
+        <script src="../../../_static/js/wavedrom.min.js"></script>
+        <script src="../../../_static/js/wavedrom.skin.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Device" href="device.html" />
+    <link rel="prev" title="USB3" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> SOL
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../features.html">Status &amp; Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../features.html#support-for-device-mode">Support for Device Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../features.html#support-for-host-mode">Support for Host Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../install.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../install.html#installing-prerequisites">Installing Prerequisites</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../install.html#installing-python">Installing Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../install.html#installing-yosys">Installing Yosys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../install.html#installing-torii">Installing Torii</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../install.html#installing-sol">Installing SOL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../install.html#latest-release">Latest release</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../install.html#development-snapshot">Development snapshot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../install.html#editable-development-snapshot">Editable development snapshot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started.html#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Gateware Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../interface/index.html">Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../interface/pipe.html">PIPE</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/pipe.html#sol_usb.gateware.interface.pipe.PIPEInterface"><code class="docutils literal notranslate"><span class="pre">PIPEInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/pipe.html#sol_usb.gateware.interface.pipe.AsyncPIPEInterface"><code class="docutils literal notranslate"><span class="pre">AsyncPIPEInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/pipe.html#sol_usb.gateware.interface.pipe.GearedPIPEInterface"><code class="docutils literal notranslate"><span class="pre">GearedPIPEInterface</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../interface/ulpi.html">ULPI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIInterface"><code class="docutils literal notranslate"><span class="pre">ULPIInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIRegisterWindow"><code class="docutils literal notranslate"><span class="pre">ULPIRegisterWindow</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIRxEventDecoder"><code class="docutils literal notranslate"><span class="pre">ULPIRxEventDecoder</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIControlTranslator"><code class="docutils literal notranslate"><span class="pre">ULPIControlTranslator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPITransmitTranslator"><code class="docutils literal notranslate"><span class="pre">ULPITransmitTranslator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.UTMITranslator"><code class="docutils literal notranslate"><span class="pre">UTMITranslator</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../interface/utmi.html">UTMI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIOperatingMode"><code class="docutils literal notranslate"><span class="pre">UTMIOperatingMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/utmi.html#sol_usb.gateware.interface.utmi.UTMITerminationSelect"><code class="docutils literal notranslate"><span class="pre">UTMITerminationSelect</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/utmi.html#sol_usb.gateware.interface.utmi.UTMITransmitInterface"><code class="docutils literal notranslate"><span class="pre">UTMITransmitInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIInterfaceMultiplexer"><code class="docutils literal notranslate"><span class="pre">UTMIInterfaceMultiplexer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIInterface"><code class="docutils literal notranslate"><span class="pre">UTMIInterface</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../interface/gateware/index.html">Gateware PHY</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/gateware/phy.html">Gateware PHY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/gateware/receiver.html">Gateware PHY - Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/gateware/transmitter.html">Gateware PHY - Transmitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/gateware/index.html#sol_usb.gateware.interface.gateware_phy.GatewarePHY"><code class="docutils literal notranslate"><span class="pre">GatewarePHY</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../interface/serdes/index.html">SerDes PHY</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/serdes/ecp5.html">SerDes PHY - ECP5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/serdes/lfps.html">SerDes PHY - LFPS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/serdes/xc7.html">SerDes PHY - XC7</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/serdes/index.html#sol_usb.gateware.interface.serdes_phy.ECP5SerDesPIPE"><code class="docutils literal notranslate"><span class="pre">ECP5SerDesPIPE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/serdes/index.html#sol_usb.gateware.interface.serdes_phy.XC7GTPSerDesPIPE"><code class="docutils literal notranslate"><span class="pre">XC7GTPSerDesPIPE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/serdes/index.html#sol_usb.gateware.interface.serdes_phy.XC7GTXSerDesPIPE"><code class="docutils literal notranslate"><span class="pre">XC7GTXSerDesPIPE</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../soc/index.html">SoC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../soc/cpu.html">CPU</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../soc/event.html">Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../soc/memory.html">Memory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../soc/memory.html#sol_usb.gateware.soc.memory.WishboneRAM"><code class="docutils literal notranslate"><span class="pre">WishboneRAM</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../soc/memory.html#sol_usb.gateware.soc.memory.WishboneROM"><code class="docutils literal notranslate"><span class="pre">WishboneROM</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../soc/peripheral.html">Peripheral</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../soc/simplesoc.html">SimpleSoC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../soc/uart.html">UART</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../stream/index.html">Stream</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../stream/index.html#sol_usb.gateware.stream.StreamInterface"><code class="docutils literal notranslate"><span class="pre">StreamInterface</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../stream/index.html#sol_usb.gateware.stream.StreamInterface.stream_eq"><code class="docutils literal notranslate"><span class="pre">StreamInterface.stream_eq()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../stream/index.html#sol_usb.gateware.stream.StreamInterface.tap"><code class="docutils literal notranslate"><span class="pre">StreamInterface.tap()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../stream/index.html#module-sol_usb.gateware.stream.arbiter">Arbiter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../stream/index.html#sol_usb.gateware.stream.arbiter.StreamMultiplexer"><code class="docutils literal notranslate"><span class="pre">StreamMultiplexer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../stream/index.html#sol_usb.gateware.stream.arbiter.StreamArbiter"><code class="docutils literal notranslate"><span class="pre">StreamArbiter</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../stream/index.html#module-sol_usb.gateware.stream.generator">Generator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../stream/index.html#sol_usb.gateware.stream.generator.ConstantStreamGenerator"><code class="docutils literal notranslate"><span class="pre">ConstantStreamGenerator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../stream/index.html#sol_usb.gateware.stream.generator.StreamSerializer"><code class="docutils literal notranslate"><span class="pre">StreamSerializer</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">USB</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../analyzer.html">Analyzer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../analyzer.html#sol_usb.gateware.usb.analyzer.USBAnalyzer"><code class="docutils literal notranslate"><span class="pre">USBAnalyzer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../request.html">Request</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../request.html#module-sol_usb.gateware.usb.request.control">Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../request.html#module-sol_usb.gateware.usb.request.interface">Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../request.html#module-sol_usb.gateware.usb.request.standard">Standard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../request.html#module-sol_usb.gateware.usb.request.windows">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../stream.html">Stream</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.USBInStreamInterface"><code class="docutils literal notranslate"><span class="pre">USBInStreamInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.USBOutStreamInterface"><code class="docutils literal notranslate"><span class="pre">USBOutStreamInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.USBOutStreamBoundaryDetector"><code class="docutils literal notranslate"><span class="pre">USBOutStreamBoundaryDetector</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.USBRawSuperSpeedStream"><code class="docutils literal notranslate"><span class="pre">USBRawSuperSpeedStream</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamArbiter"><code class="docutils literal notranslate"><span class="pre">SuperSpeedStreamArbiter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface"><code class="docutils literal notranslate"><span class="pre">SuperSpeedStreamInterface</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../usb2/index.html">USB2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/control.html">Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/descriptor.html">Descriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/deserializer.html">Deserializer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/device.html">Device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/endpoint.html">Endpoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/endpoint.html#gateware-endpoint-interfaces">Gateware Endpoint Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/packet.html">Packet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/request.html">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/reset.html">Reset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/transfer.html">Transfer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/endpoints.html">Endpoints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/interfaces.html">Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/index.html#conceptual-components">Conceptual Components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/index.html#token-detector">Token Detector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/index.html#handshake-detector">Handshake Detector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/index.html#data-packet-receiver">Data Packet Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/index.html#device-state-manager">Device State Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/index.html#handshake-generator">Handshake Generator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/index.html#data-packet-transmitter">Data Packet Transmitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/index.html#data-crc-unit">Data CRC Unit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/index.html#interpacket-timer">Interpacket Timer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usb2/index.html#reset-suspend-sequencer">Reset/Suspend Sequencer</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">USB3</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="device.html">Device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="endpoints.html">Endpoints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="link.html">Link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="physical.html">Physical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="protocol.html">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="request.html">Request</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/custom.html">SOL On Your Own Hardware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../hardware/custom.html#high-speed-via-a-ulpi-phy">High-Speed via a ULPI PHY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../hardware/custom.html#full-speed-using-fpga-i-o">Full-Speed using FPGA I/O</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/index.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../changelog.html#unreleased">Unreleased</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../changelog.html#added">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../changelog.html#changed">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../changelog.html#deprecated">Deprecated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../changelog.html#removed">Removed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../changelog.html#fixed">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../changelog.html#security">Security</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html#id1"></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SOL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Gateware Library</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">USB</a></li>
+          <li class="breadcrumb-item"><a href="index.html">USB3</a></li>
+      <li class="breadcrumb-item active">Application</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/shrine-maiden-heavy-industries/sol/blob/main/docs/gateware/usb/usb3/application.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-sol_usb.gateware.usb.usb3.application">
+<span id="application"></span><h1>Application<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.application" title="Permalink to this heading"></a></h1>
+<p>USB3 application-layer gateware.</p>
+<section id="module-sol_usb.gateware.usb.usb3.application.descriptor">
+<span id="descriptor"></span><h2>Descriptor<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.application.descriptor" title="Permalink to this heading"></a></h2>
+<p>Utilities for building USB3 descriptors into gateware.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.application.descriptor.GetDescriptorHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.application.descriptor.</span></span><span class="sig-name descname"><span class="pre">GetDescriptorHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.application.descriptor.GetDescriptorHandler" title="Permalink to this definition"></a></dt>
+<dd><p>Gateware that handles responding to GetDescriptor requests.</p>
+<p>Currently does not support descriptors in multiple languages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<em>Signal</em><em>(</em><em>16</em><em>)</em><em>, </em><em>input</em>) – The value field associated with the Get Descriptor request. Contains the descriptor type and index.</p></li>
+<li><p><strong>length</strong> (<em>Signal</em><em>(</em><em>16</em><em>)</em><em>, </em><em>input</em>) – The length field associated with the Get Descriptor request.
+Determines the maximum amount allowed in a response.</p></li>
+<li><p><strong>start</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Strobe that indicates when a descriptor should be transmitted.</p></li>
+<li><p><strong>tx</strong> (<em>stream_type</em><em>(</em><em>)</em><em>, </em><em>output stream</em>) – Stream that carries our output descriptor data.</p></li>
+<li><p><strong>tx_length</strong> (<em>Signal</em><em>(</em><em>16</em><em>)</em><em>, </em><em>output</em>) – The actual length of the descriptor to be sent. At SuperSpeed, used for header generation.</p></li>
+<li><p><strong>stall</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output</em>) – Strobe; pulsed if a STALL handshake should be generated, instead of a response.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>domain</strong> (<em>string</em>) – The clock domain this generator should belong to. Defaults to ‘’.</p></li>
+<li><p><strong>stream_type</strong> (<a class="reference internal" href="../../stream/index.html#sol_usb.gateware.stream.StreamInterface" title="sol_usb.gateware.stream.StreamInterface"><em>StreamInterface</em></a><em>, or </em><em>subclass</em>) – The type of stream we’ll be multiplexing.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-sol_usb.gateware.usb.usb3.application.request">
+<span id="request"></span><h2>Request<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.application.request" title="Permalink to this heading"></a></h2>
+<p>Control-request interfacing and gateware for USB3.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandlerInterface">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.application.request.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedRequestHandlerInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandlerInterface" title="Permalink to this definition"></a></dt>
+<dd><p>Interface representing a connection between a control endpoint and a request handler.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>setup</strong> (<a class="reference internal" href="../request.html#sol_usb.gateware.usb.request.interface.SetupPacket" title="sol_usb.gateware.usb.request.interface.SetupPacket"><em>SetupPacket</em></a><em>(</em><em>)</em><em>, </em><em>input to handler</em>) – The setup packet relevant to the current request.</p></li>
+<li><p><strong>data_requested</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input to handler</em>) – Strobe; pulsed when an IN token is received, and thus data is expected.
+If the relevant handler handles this request, it will want to respond with data on <code class="docutils literal notranslate"><span class="pre">.tx*</span></code>.</p></li>
+<li><p><strong>status_requested</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input to handler</em>) – Strobe; pulsed when a STATUS token is received. The device should respond with a handshake;
+typically either an ACK or a STALL.</p></li>
+<li><p><strong>rx</strong> (<a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface" title="sol_usb.gateware.usb.stream.SuperSpeedStreamInterface"><em>SuperSpeedStreamInterface</em></a><em>(</em><em>)</em><em>, </em><em>input stream to handler</em>) – A stream containing any data received as part af an OUT request. Its <code class="docutils literal notranslate"><span class="pre">ready</span></code> is ignored.</p></li>
+<li><p><strong>rx_complete</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input to handler</em>) – Strobes after successful data receipt. Like most USB data, the packet data cannot be considered
+to be known-good during receipt; but becomes good once :attr:<code class="docutils literal notranslate"><span class="pre">rx_complete</span></code> is strobed.</p></li>
+<li><p><strong>rx_invalid</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input to handler</em>) – Strobes after an invalid data receipt. Indicates that the most recently received packet was
+corrupted; and should be discarded as invalid.</p></li>
+<li><p><strong>tx</strong> (<a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface" title="sol_usb.gateware.usb.stream.SuperSpeedStreamInterface"><em>SuperSpeedStreamInterface</em></a><em>(</em><em>)</em><em>, </em><em>output stream from handler</em>) – Should be driven to provide data in response to :attr:<code class="docutils literal notranslate"><span class="pre">data_requested</span></code>. On the same cycle as
+this stream becomes valid, :attr:<code class="docutils literal notranslate"><span class="pre">tx_length</span></code> and :attr:<code class="docutils literal notranslate"><span class="pre">tx_sequence_number</span></code> must be valid.</p></li>
+<li><p><strong>tx_length</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.11)"><em>range</em></a><em>(</em><em>1024 + 1</em><em>)</em><em>)</em><em>, </em><em>output</em>) – The length of the packet to be transmitted on :attr:<code class="docutils literal notranslate"><span class="pre">tx</span></code>. Mandatory for transmission.</p></li>
+<li><p><strong>tx_sequence_number</strong> (<em>Signal</em><em>(</em><em>5</em><em>)</em>) – The signal number of the packet to be transmitted on :attr:<code class="docutils literal notranslate"><span class="pre">tx</span></code>. Should start with 0, and advance
+by one on each subsequent packet.</p></li>
+<li><p><strong>handshakes_out</strong> (<a class="reference internal" href="protocol.html#sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeGeneratorInterface" title="sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeGeneratorInterface"><em>HandshakeGeneratorInterface</em></a><em>(</em><em>)</em><em>, </em><em>output from handler</em>) – Carries any handshakes generated by this endpoint. <code class="docutils literal notranslate"><span class="pre">endpoint_number</span></code> does not typically need
+to be set; it is driven by the control endpoint.</p></li>
+<li><p><strong>handshakes_in</strong> (<a class="reference internal" href="protocol.html#sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeGeneratorInterface" title="sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeGeneratorInterface"><em>HandshakeGeneratorInterface</em></a><em>(</em><em>)</em><em>, </em><em>input to handler</em>) – Carries any handshakes received; can be monitored for e.g. ACKs to sent packets.</p></li>
+<li><p><strong>address_changed</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output from handler</em>) – Strobe; should be pulsed when the device’s address is to be changed. Should be accompanied by
+a new address on :attr:<code class="docutils literal notranslate"><span class="pre">new_address</span></code>.</p></li>
+<li><p><strong>new_address</strong> (<em>Signal</em><em>(</em><em>7</em><em>)</em><em>, </em><em>output from handler</em>) – The new address to be applied to the device when :attr:<code class="docutils literal notranslate"><span class="pre">address_changed</span></code> is strobed.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>config_changed: Signal(), output from handler</dt><dd><p>Strobe; should be pulsed when the device’s configuration is to be changed. Should be accompanied by
+a new address on :attr:<code class="docutils literal notranslate"><span class="pre">new_config</span></code>.</p>
+</dd>
+<dt>new_config: Signal(8), output from handler</dt><dd><p>The new configuration to be applied to the device when :attr:<code class="docutils literal notranslate"><span class="pre">config_changed</span></code> is strobed.</p>
+</dd>
+<dt>current_configuration: Signal(8), input to handler</dt><dd><p>The index of the device’s current configuration.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.application.request.SuperSpeedSetupDecoder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.application.request.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedSetupDecoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.application.request.SuperSpeedSetupDecoder" title="Permalink to this definition"></a></dt>
+<dd><p>Gateware that decodes any received Setup packets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sink</strong> (<a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface" title="sol_usb.gateware.usb.stream.SuperSpeedStreamInterface"><em>SuperSpeedStreamInterface</em></a><em>(</em><em>)</em><em>, </em><em>input stream</em><em> [</em><em>read-only</em><em>]</em>) – Packet interface that carres in new data packets. Results should be considered questionable
+until :attr:<code class="docutils literal notranslate"><span class="pre">packet_good</span></code> or :attr:<code class="docutils literal notranslate"><span class="pre">packet_bad</span></code> are strobed.</p></li>
+<li><p><strong>rx_good</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Strobe; indicates that the packet received passed validations and can be considered good.</p></li>
+<li><p><strong>rx_bad</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Strobe; indicates that the packet failed CRC checks, or did not end properly.</p></li>
+<li><p><strong>header_in</strong> (<a class="reference internal" href="link.html#sol_usb.gateware.usb.usb3.link.data.DataHeaderPacket" title="sol_usb.gateware.usb.usb3.link.data.DataHeaderPacket"><em>DataHeaderPacket</em></a><em>(</em><em>)</em><em>, </em><em>input</em>) – Header associated with the active packet.</p></li>
+<li><p><strong>packet</strong> (<a class="reference internal" href="../request.html#sol_usb.gateware.usb.request.interface.SetupPacket" title="sol_usb.gateware.usb.request.interface.SetupPacket"><em>SetupPacket</em></a><em>(</em><em>)</em><em>, </em><em>output</em>) – The parsed contents of our setup packet.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandlerMultiplexer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.application.request.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedRequestHandlerMultiplexer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandlerMultiplexer" title="Permalink to this definition"></a></dt>
+<dd><p>Multiplexes multiple RequestHandlers down to a single interface.</p>
+<p>Interfaces are added using .add_interface().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><p><strong>shared</strong> (<a class="reference internal" href="#sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandlerInterface" title="sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandlerInterface"><em>SuperSpeedRequestHandlerInterface</em></a><em>(</em><em>)</em>) – The post-multiplexer RequestHandler interface.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandlerMultiplexer.add_interface">
+<span class="sig-name descname"><span class="pre">add_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandlerInterface" title="sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandlerInterface"><span class="pre">SuperSpeedRequestHandlerInterface</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandlerMultiplexer.add_interface" title="Permalink to this definition"></a></dt>
+<dd><p>Adds a RequestHandlerInterface to the multiplexer.</p>
+<p>Arbitration is not performed; it’s expected only one handler will be
+driving requests at a time.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.application.request.StallOnlyRequestHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.application.request.</span></span><span class="sig-name descname"><span class="pre">StallOnlyRequestHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.application.request.StallOnlyRequestHandler" title="Permalink to this definition"></a></dt>
+<dd><p>Simple gateware request handler that only conditionally stalls requests.</p>
+<dl class="simple">
+<dt>I/O port:</dt><dd><dl class="simple">
+<dt><a href="#id1"><span class="problematic" id="id2">*</span></a>: interface – The RequestHandlerInterface used to handle requests.</dt><dd><p>See its record definition for signal definitions.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.application.request.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedRequestHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.application.request.SuperSpeedRequestHandler" title="Permalink to this definition"></a></dt>
+<dd><p>Simple base class for request handlers.</p>
+</dd></dl>
+
+</section>
+</section>
+
+    <script type="text/javascript">
+        function init() {
+            WaveDrom.ProcessAll();
+        }
+        window.onload = init;
+    </script>
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="USB3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="device.html" class="btn btn-neutral float-right" title="Device" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020 Great Scott Gadgets.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

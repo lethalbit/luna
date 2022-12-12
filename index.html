@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOL: USB Gateware Library &mdash; SOL 0.1.1.dev172 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/styles.css" type="text/css" />
+      <link rel="stylesheet" href="_static/platformpicker.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/styles.css" type="text/css" />
+    <link rel="canonical" href="https://shrine-maiden-heavy-industries.github.io/sol/index.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/platformpicker.js"></script>
+        <script src="_static/wavedrom.skin.js"></script>
+        <script src="_static/wavedrom.min.js"></script>
+        <script src="_static/js/wavedrom.min.js"></script>
+        <script src="_static/js/wavedrom.skin.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> SOL
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Status &amp; Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="features.html#support-for-device-mode">Support for Device Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#support-for-host-mode">Support for Host Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#installing-prerequisites">Installing Prerequisites</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="install.html#installing-python">Installing Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install.html#installing-yosys">Installing Yosys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install.html#installing-torii">Installing Torii</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#installing-sol">Installing SOL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="install.html#latest-release">Latest release</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install.html#development-snapshot">Development snapshot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install.html#editable-development-snapshot">Editable development snapshot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gateware/index.html">Gateware Library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gateware/interface/index.html">Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gateware/interface/pipe.html">PIPE</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/pipe.html#sol_usb.gateware.interface.pipe.PIPEInterface"><code class="docutils literal notranslate"><span class="pre">PIPEInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/pipe.html#sol_usb.gateware.interface.pipe.AsyncPIPEInterface"><code class="docutils literal notranslate"><span class="pre">AsyncPIPEInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/pipe.html#sol_usb.gateware.interface.pipe.GearedPIPEInterface"><code class="docutils literal notranslate"><span class="pre">GearedPIPEInterface</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/interface/ulpi.html">ULPI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIInterface"><code class="docutils literal notranslate"><span class="pre">ULPIInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIRegisterWindow"><code class="docutils literal notranslate"><span class="pre">ULPIRegisterWindow</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIRxEventDecoder"><code class="docutils literal notranslate"><span class="pre">ULPIRxEventDecoder</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIControlTranslator"><code class="docutils literal notranslate"><span class="pre">ULPIControlTranslator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPITransmitTranslator"><code class="docutils literal notranslate"><span class="pre">ULPITransmitTranslator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.UTMITranslator"><code class="docutils literal notranslate"><span class="pre">UTMITranslator</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/interface/utmi.html">UTMI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIOperatingMode"><code class="docutils literal notranslate"><span class="pre">UTMIOperatingMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/utmi.html#sol_usb.gateware.interface.utmi.UTMITerminationSelect"><code class="docutils literal notranslate"><span class="pre">UTMITerminationSelect</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/utmi.html#sol_usb.gateware.interface.utmi.UTMITransmitInterface"><code class="docutils literal notranslate"><span class="pre">UTMITransmitInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIInterfaceMultiplexer"><code class="docutils literal notranslate"><span class="pre">UTMIInterfaceMultiplexer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIInterface"><code class="docutils literal notranslate"><span class="pre">UTMIInterface</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/interface/gateware/index.html">Gateware PHY</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/gateware/phy.html">Gateware PHY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/gateware/receiver.html">Gateware PHY - Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/gateware/transmitter.html">Gateware PHY - Transmitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/gateware/index.html#sol_usb.gateware.interface.gateware_phy.GatewarePHY"><code class="docutils literal notranslate"><span class="pre">GatewarePHY</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/interface/serdes/index.html">SerDes PHY</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/ecp5.html">SerDes PHY - ECP5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/lfps.html">SerDes PHY - LFPS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/xc7.html">SerDes PHY - XC7</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/index.html#sol_usb.gateware.interface.serdes_phy.ECP5SerDesPIPE"><code class="docutils literal notranslate"><span class="pre">ECP5SerDesPIPE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/index.html#sol_usb.gateware.interface.serdes_phy.XC7GTPSerDesPIPE"><code class="docutils literal notranslate"><span class="pre">XC7GTPSerDesPIPE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/index.html#sol_usb.gateware.interface.serdes_phy.XC7GTXSerDesPIPE"><code class="docutils literal notranslate"><span class="pre">XC7GTXSerDesPIPE</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gateware/soc/index.html">SoC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/cpu.html">CPU</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/event.html">Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/memory.html">Memory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/soc/memory.html#sol_usb.gateware.soc.memory.WishboneRAM"><code class="docutils literal notranslate"><span class="pre">WishboneRAM</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/soc/memory.html#sol_usb.gateware.soc.memory.WishboneROM"><code class="docutils literal notranslate"><span class="pre">WishboneROM</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/peripheral.html">Peripheral</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/simplesoc.html">SimpleSoC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/uart.html">UART</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gateware/stream/index.html">Stream</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.StreamInterface"><code class="docutils literal notranslate"><span class="pre">StreamInterface</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.StreamInterface.stream_eq"><code class="docutils literal notranslate"><span class="pre">StreamInterface.stream_eq()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.StreamInterface.tap"><code class="docutils literal notranslate"><span class="pre">StreamInterface.tap()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/stream/index.html#module-sol_usb.gateware.stream.arbiter">Arbiter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.arbiter.StreamMultiplexer"><code class="docutils literal notranslate"><span class="pre">StreamMultiplexer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.arbiter.StreamArbiter"><code class="docutils literal notranslate"><span class="pre">StreamArbiter</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/stream/index.html#module-sol_usb.gateware.stream.generator">Generator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.generator.ConstantStreamGenerator"><code class="docutils literal notranslate"><span class="pre">ConstantStreamGenerator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.generator.StreamSerializer"><code class="docutils literal notranslate"><span class="pre">StreamSerializer</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gateware/usb/index.html">USB</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gateware/usb/analyzer.html">Analyzer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/analyzer.html#sol_usb.gateware.usb.analyzer.USBAnalyzer"><code class="docutils literal notranslate"><span class="pre">USBAnalyzer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/usb/request.html">Request</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/request.html#module-sol_usb.gateware.usb.request.control">Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/request.html#module-sol_usb.gateware.usb.request.interface">Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/request.html#module-sol_usb.gateware.usb.request.standard">Standard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/request.html#module-sol_usb.gateware.usb.request.windows">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/usb/stream.html">Stream</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.USBInStreamInterface"><code class="docutils literal notranslate"><span class="pre">USBInStreamInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.USBOutStreamInterface"><code class="docutils literal notranslate"><span class="pre">USBOutStreamInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.USBOutStreamBoundaryDetector"><code class="docutils literal notranslate"><span class="pre">USBOutStreamBoundaryDetector</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.USBRawSuperSpeedStream"><code class="docutils literal notranslate"><span class="pre">USBRawSuperSpeedStream</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamArbiter"><code class="docutils literal notranslate"><span class="pre">SuperSpeedStreamArbiter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface"><code class="docutils literal notranslate"><span class="pre">SuperSpeedStreamInterface</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/usb/usb2/index.html">USB2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/control.html">Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/descriptor.html">Descriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/deserializer.html">Deserializer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/device.html">Device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/endpoint.html">Endpoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/endpoint.html#gateware-endpoint-interfaces">Gateware Endpoint Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/packet.html">Packet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/request.html">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/reset.html">Reset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/transfer.html">Transfer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/endpoints.html">Endpoints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/interfaces.html">Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#conceptual-components">Conceptual Components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#token-detector">Token Detector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#handshake-detector">Handshake Detector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#data-packet-receiver">Data Packet Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#device-state-manager">Device State Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#handshake-generator">Handshake Generator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#data-packet-transmitter">Data Packet Transmitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#data-crc-unit">Data CRC Unit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#interpacket-timer">Interpacket Timer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#reset-suspend-sequencer">Reset/Suspend Sequencer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/usb/usb3/index.html">USB3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/application.html">Application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/device.html">Device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/endpoints.html">Endpoints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/link.html">Link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/physical.html">Physical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/protocol.html">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/request.html">Request</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/custom.html">SOL On Your Own Hardware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hardware/custom.html#high-speed-via-a-ulpi-phy">High-Speed via a ULPI PHY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware/custom.html#full-speed-using-fpga-i-o">Full-Speed using FPGA I/O</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/index.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#unreleased">Unreleased</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#added">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#changed">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#deprecated">Deprecated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#removed">Removed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#fixed">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#security">Security</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html#id1"></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">SOL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">SOL: USB Gateware Library</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/shrine-maiden-heavy-industries/sol/blob/main/docs/index.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="toctree-wrapper compound">
+</div>
+<section id="sol-usb-gateware-library">
+<h1>SOL: USB Gateware Library<a class="headerlink" href="#sol-usb-gateware-library" title="Permalink to this heading"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This documentation is a work in progress and is seriously incomplete!</p>
+</div>
+<p>SOL is a USB Gateware Library for <a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/torii-hdl">Torii</a>. It is a fork of <a class="reference external" href="https://github.com/greatscottgadgets/luna">LUNA</a> which is a　USB Multitool and <a class="reference external" href="https://github.com/amaranth-lang/amaranth">Amaranth</a> Library for USB Gateware.</p>
+<p>For more information on SOL, see the <a class="reference internal" href="intro.html"><span class="doc std std-doc">Introduction</span></a> and check out the <a class="reference internal" href="getting_started.html"><span class="doc std std-doc">Getting Started</span></a> guide for how to get up and running with SOL.</p>
+</section>
+
+    <script type="text/javascript">
+        function init() {
+            WaveDrom.ProcessAll();
+        }
+        window.onload = init;
+    </script>
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="intro.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020 Great Scott Gadgets.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

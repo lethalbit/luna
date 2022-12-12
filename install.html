@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; SOL 0.1.1.dev172 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/styles.css" type="text/css" />
+      <link rel="stylesheet" href="_static/platformpicker.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/styles.css" type="text/css" />
+    <link rel="canonical" href="https://shrine-maiden-heavy-industries.github.io/sol/install.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/platformpicker.js"></script>
+        <script src="_static/wavedrom.skin.js"></script>
+        <script src="_static/wavedrom.min.js"></script>
+        <script src="_static/js/wavedrom.min.js"></script>
+        <script src="_static/js/wavedrom.skin.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting Started" href="getting_started.html" />
+    <link rel="prev" title="Status &amp; Support" href="features.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> SOL
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Status &amp; Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="features.html#support-for-device-mode">Support for Device Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#support-for-host-mode">Support for Host Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installing-prerequisites">Installing Prerequisites</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installing-python">Installing Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-yosys">Installing Yosys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-torii">Installing Torii</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-sol">Installing SOL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#latest-release">Latest release</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#development-snapshot">Development snapshot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editable-development-snapshot">Editable development snapshot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gateware/index.html">Gateware Library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gateware/interface/index.html">Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gateware/interface/pipe.html">PIPE</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/pipe.html#sol_usb.gateware.interface.pipe.PIPEInterface"><code class="docutils literal notranslate"><span class="pre">PIPEInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/pipe.html#sol_usb.gateware.interface.pipe.AsyncPIPEInterface"><code class="docutils literal notranslate"><span class="pre">AsyncPIPEInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/pipe.html#sol_usb.gateware.interface.pipe.GearedPIPEInterface"><code class="docutils literal notranslate"><span class="pre">GearedPIPEInterface</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/interface/ulpi.html">ULPI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIInterface"><code class="docutils literal notranslate"><span class="pre">ULPIInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIRegisterWindow"><code class="docutils literal notranslate"><span class="pre">ULPIRegisterWindow</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIRxEventDecoder"><code class="docutils literal notranslate"><span class="pre">ULPIRxEventDecoder</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIControlTranslator"><code class="docutils literal notranslate"><span class="pre">ULPIControlTranslator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPITransmitTranslator"><code class="docutils literal notranslate"><span class="pre">ULPITransmitTranslator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/ulpi.html#sol_usb.gateware.interface.ulpi.UTMITranslator"><code class="docutils literal notranslate"><span class="pre">UTMITranslator</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/interface/utmi.html">UTMI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIOperatingMode"><code class="docutils literal notranslate"><span class="pre">UTMIOperatingMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/utmi.html#sol_usb.gateware.interface.utmi.UTMITerminationSelect"><code class="docutils literal notranslate"><span class="pre">UTMITerminationSelect</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/utmi.html#sol_usb.gateware.interface.utmi.UTMITransmitInterface"><code class="docutils literal notranslate"><span class="pre">UTMITransmitInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIInterfaceMultiplexer"><code class="docutils literal notranslate"><span class="pre">UTMIInterfaceMultiplexer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIInterface"><code class="docutils literal notranslate"><span class="pre">UTMIInterface</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/interface/gateware/index.html">Gateware PHY</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/gateware/phy.html">Gateware PHY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/gateware/receiver.html">Gateware PHY - Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/gateware/transmitter.html">Gateware PHY - Transmitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/gateware/index.html#sol_usb.gateware.interface.gateware_phy.GatewarePHY"><code class="docutils literal notranslate"><span class="pre">GatewarePHY</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/interface/serdes/index.html">SerDes PHY</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/ecp5.html">SerDes PHY - ECP5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/lfps.html">SerDes PHY - LFPS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/xc7.html">SerDes PHY - XC7</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/index.html#sol_usb.gateware.interface.serdes_phy.ECP5SerDesPIPE"><code class="docutils literal notranslate"><span class="pre">ECP5SerDesPIPE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/index.html#sol_usb.gateware.interface.serdes_phy.XC7GTPSerDesPIPE"><code class="docutils literal notranslate"><span class="pre">XC7GTPSerDesPIPE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/interface/serdes/index.html#sol_usb.gateware.interface.serdes_phy.XC7GTXSerDesPIPE"><code class="docutils literal notranslate"><span class="pre">XC7GTXSerDesPIPE</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gateware/soc/index.html">SoC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/cpu.html">CPU</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/event.html">Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/memory.html">Memory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/soc/memory.html#sol_usb.gateware.soc.memory.WishboneRAM"><code class="docutils literal notranslate"><span class="pre">WishboneRAM</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/soc/memory.html#sol_usb.gateware.soc.memory.WishboneROM"><code class="docutils literal notranslate"><span class="pre">WishboneROM</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/peripheral.html">Peripheral</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/simplesoc.html">SimpleSoC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/soc/uart.html">UART</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gateware/stream/index.html">Stream</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.StreamInterface"><code class="docutils literal notranslate"><span class="pre">StreamInterface</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.StreamInterface.stream_eq"><code class="docutils literal notranslate"><span class="pre">StreamInterface.stream_eq()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.StreamInterface.tap"><code class="docutils literal notranslate"><span class="pre">StreamInterface.tap()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/stream/index.html#module-sol_usb.gateware.stream.arbiter">Arbiter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.arbiter.StreamMultiplexer"><code class="docutils literal notranslate"><span class="pre">StreamMultiplexer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.arbiter.StreamArbiter"><code class="docutils literal notranslate"><span class="pre">StreamArbiter</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/stream/index.html#module-sol_usb.gateware.stream.generator">Generator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.generator.ConstantStreamGenerator"><code class="docutils literal notranslate"><span class="pre">ConstantStreamGenerator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/stream/index.html#sol_usb.gateware.stream.generator.StreamSerializer"><code class="docutils literal notranslate"><span class="pre">StreamSerializer</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gateware/usb/index.html">USB</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gateware/usb/analyzer.html">Analyzer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/analyzer.html#sol_usb.gateware.usb.analyzer.USBAnalyzer"><code class="docutils literal notranslate"><span class="pre">USBAnalyzer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/usb/request.html">Request</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/request.html#module-sol_usb.gateware.usb.request.control">Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/request.html#module-sol_usb.gateware.usb.request.interface">Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/request.html#module-sol_usb.gateware.usb.request.standard">Standard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/request.html#module-sol_usb.gateware.usb.request.windows">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/usb/stream.html">Stream</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.USBInStreamInterface"><code class="docutils literal notranslate"><span class="pre">USBInStreamInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.USBOutStreamInterface"><code class="docutils literal notranslate"><span class="pre">USBOutStreamInterface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.USBOutStreamBoundaryDetector"><code class="docutils literal notranslate"><span class="pre">USBOutStreamBoundaryDetector</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.USBRawSuperSpeedStream"><code class="docutils literal notranslate"><span class="pre">USBRawSuperSpeedStream</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamArbiter"><code class="docutils literal notranslate"><span class="pre">SuperSpeedStreamArbiter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface"><code class="docutils literal notranslate"><span class="pre">SuperSpeedStreamInterface</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/usb/usb2/index.html">USB2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/control.html">Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/descriptor.html">Descriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/deserializer.html">Deserializer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/device.html">Device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/endpoint.html">Endpoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/endpoint.html#gateware-endpoint-interfaces">Gateware Endpoint Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/packet.html">Packet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/request.html">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/reset.html">Reset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/transfer.html">Transfer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/endpoints.html">Endpoints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/interfaces.html">Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#conceptual-components">Conceptual Components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#token-detector">Token Detector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#handshake-detector">Handshake Detector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#data-packet-receiver">Data Packet Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#device-state-manager">Device State Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#handshake-generator">Handshake Generator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#data-packet-transmitter">Data Packet Transmitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#data-crc-unit">Data CRC Unit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#interpacket-timer">Interpacket Timer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb2/index.html#reset-suspend-sequencer">Reset/Suspend Sequencer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gateware/usb/usb3/index.html">USB3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/application.html">Application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/device.html">Device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/endpoints.html">Endpoints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/link.html">Link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/physical.html">Physical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/protocol.html">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gateware/usb/usb3/request.html">Request</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/custom.html">SOL On Your Own Hardware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hardware/custom.html#high-speed-via-a-ulpi-phy">High-Speed via a ULPI PHY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware/custom.html#full-speed-using-fpga-i-o">Full-Speed using FPGA I/O</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/index.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#unreleased">Unreleased</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#added">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#changed">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#deprecated">Deprecated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#removed">Removed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#fixed">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#security">Security</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html#id1"></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SOL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Installation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/shrine-maiden-heavy-industries/sol/blob/main/docs/install.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The following instructions are a work-in-progress and may not be entirely up to date.</p>
+</div>
+<p>SOL requires Python &gt;= 3.9, and <a class="reference external" href="https://github.com/YosysHQ/yosys">Yosys</a> &gt;= 0.20. Torii has been tested with <a class="reference external" href="https://www.python.org/">CPython</a>, but might possibly run under <a class="reference external" href="https://www.pypy.org/">PyPy</a>.</p>
+<p>SOL is built off of the <a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/torii-hdl">Torii</a> Hardware Definition Language, as such that is also required.</p>
+<section id="installing-prerequisites">
+<h2>Installing Prerequisites<a class="headerlink" href="#installing-prerequisites" title="Permalink to this heading"></a></h2>
+<p>Prior to installing SOL, you must install all of its prerequisites and requirements.</p>
+<section id="installing-python">
+<h3>Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this heading"></a></h3>
+<p>First off, install <code class="docutils literal notranslate"><span class="pre">python</span></code> and <code class="docutils literal notranslate"><span class="pre">pip</span></code> onto your system if the’re not there already.</p>
+<div class="platform-picker docutils container">
+<div class="platform-choice platform--arch platform-noaltname docutils container">
+<p class="platform-title">Arch Linux</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo pacman -S python python-pip
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--linux platform-noaltname docutils container">
+<p class="platform-title">Other Linux</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These instructions may be incorrect or incomplete!</p>
+</div>
+<p>For <a class="reference external" href="https://www.debian.org/">Debian</a> based systems, use <code class="docutils literal notranslate"><span class="pre">apt</span></code> to install <code class="docutils literal notranslate"><span class="pre">python3</span></code> and <code class="docutils literal notranslate"><span class="pre">python3-pip</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo apt install python3 python3-pip
+</pre></div>
+</div>
+<p>For <a class="reference external" href="https://getfedora.org/">Fedora</a> and other <code class="docutils literal notranslate"><span class="pre">dnf</span></code> based systems,</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo dnf install python3 python3-pip
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--macos platform-noaltname docutils container">
+<p class="platform-title">macOS</p>
+<p>Install <a class="reference external" href="https://brew.sh/">Homebrew</a> if not done already, then install the requirements.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>brew install python
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--windows platform-noaltname docutils container">
+<p class="platform-title">Windows</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These instructions may be incorrect or incomplete!</p>
+</div>
+<p>Download the latest Python installer from the <a class="reference external" href="https://www.python.org/downloads/">python downloads</a> page.</p>
+<p>Follow the instructions and ensure that the installer installs <code class="docutils literal notranslate"><span class="pre">pip</span></code> and puts the python executable in your <code class="docutils literal notranslate"><span class="pre">%PATH%</span></code></p>
+</div>
+</div>
+</section>
+<section id="installing-yosys">
+<h3>Installing Yosys<a class="headerlink" href="#installing-yosys" title="Permalink to this heading"></a></h3>
+<div class="platform-picker docutils container">
+<div class="platform-choice platform--arch platform-noaltname docutils container">
+<p class="platform-title">Arch Linux</p>
+<p>On Arch Linux and Arch-likes, you can install nightly Yosys packages which are located in the <a class="reference external" href="https://aur.archlinux.org/">AUR</a> with an AUR helper or using <code class="docutils literal notranslate"><span class="pre">makepkg</span></code> directly.</p>
+<p>Via an AUR helper like <code class="docutils literal notranslate"><span class="pre">yay</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>yay -S yosys-nightly
+</pre></div>
+</div>
+<p>Via <code class="docutils literal notranslate"><span class="pre">makepkg</span></code> directly</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git clone https://aur.archlinux.org/yosys-nightly.git
+<span class="gp">$ </span><span class="o">(</span><span class="nb">cd</span> yosys-nightly <span class="o">&amp;&amp;</span> makepkg -sic<span class="o">)</span>
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--linux platform-noaltname docutils container">
+<p class="platform-title">Other Linux</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These instructions may be incorrect or incomplete!</p>
+</div>
+<p>With other Linux distributions, it is recommended to use the <a class="reference external" href="https://github.com/YosysHQ/oss-cad-suite-build">OSS Cad Suite</a> nightly build. It provides a full environment of all the tools needed built on a nightly basis. This includes Yosys and GTKWave</p>
+<p>Simply download the latest <a class="reference external" href="https://github.com/YosysHQ/oss-cad-suite-build/releases">release</a> for your architecture, extract it to a good home, and then add it to your <code class="docutils literal notranslate"><span class="pre">$PATH</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>curl -LOJ https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2022-04-26/oss-cad-suite-linux-x64-20220426.tgz
+<span class="gp">$ </span>tar xfv oss-cad-suite-linux-x64-20220426.tgz
+<span class="gp">$ </span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;`pwd`/oss-cad-suite/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--macos platform-noaltname docutils container">
+<p class="platform-title">macOS</p>
+<p>For macOS systems, it is recommended to use the YoWASP distribution of the toolchain. However if you want to use the native tools, and you are using an Intel based Mac, then the <a class="reference external" href="https://github.com/YosysHQ/oss-cad-suite-build">OSS Cad Suite</a> has nightly builds for x86_64 versions of Darwin. This includes Yosys and GTKWave</p>
+<p>Simply download the latest <a class="reference external" href="https://github.com/YosysHQ/oss-cad-suite-build/releases">release</a> for your architecture, extract it to a good home, and then add it to your <code class="docutils literal notranslate"><span class="pre">$PATH</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>curl -LOJ https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2022-04-26/oss-cad-suite-darwin-x64-20220426.tgz
+<span class="gp">$ </span>tar xfv oss-cad-suite-darwin-x64-20220426.tgz
+<span class="gp">$ </span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;`pwd`/oss-cad-suite/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--windows platform-noaltname docutils container">
+<p class="platform-title">Windows</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These instructions may be incorrect or incomplete!</p>
+</div>
+<p>The <a class="reference external" href="https://github.com/YosysHQ/oss-cad-suite-build">OSS Cad Suite</a> has nightly builds for x86_64 versions of Windows. This includes Yosys and GTKWave</p>
+<p>Simply download the latest <a class="reference external" href="https://github.com/YosysHQ/oss-cad-suite-build/releases">release</a> for your architecture, extract it to a good home, and then add it to your <code class="docutils literal notranslate"><span class="pre">%PATH%</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>call %cd%<span class="se">\o</span>ss-cad-suite<span class="se">\e</span>nvironment.bat
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="installing-torii">
+<h3>Installing Torii<a class="headerlink" href="#installing-torii" title="Permalink to this heading"></a></h3>
+<p>Next, install the latest stable version of <a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/torii-hdl">Torii</a> from <a class="reference external" href="https://pypi.org/project/torii">PyPi</a>.</p>
+<div class="platform-picker docutils container">
+<div class="platform-choice platform--linux platform-noaltname docutils container">
+<p class="platform-title">Linux</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip3 install --user --upgrade torii
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--macos platform-noaltname docutils container">
+<p class="platform-title">macOS</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install --user --upgrade torii
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--windows platform-noaltname docutils container">
+<p class="platform-title">Windows</p>
+<div class="highlight-doscon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span> pip install --upgrade torii
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="installing-sol">
+<h2>Installing SOL<a class="headerlink" href="#installing-sol" title="Permalink to this heading"></a></h2>
+<p>The <a class="reference internal" href="#latest-release"><span class="std std-doc">latest release</span></a> of SOL is recommended for any new projects planning to use SOL. It provides the most up-to-date stable version of the API. However, if needed, you can also install a <a class="reference internal" href="#development-snapshot"><span class="std std-doc">development snapshot</span></a> to get access to the bleeding-edge, however the API may be unstable.</p>
+<section id="latest-release">
+<h3>Latest release<a class="headerlink" href="#latest-release" title="Permalink to this heading"></a></h3>
+<div class="platform-picker docutils container">
+<div class="platform-choice platform--linux platform-noaltname docutils container">
+<p class="platform-title">Linux</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip3 install --user --upgrade sol-usb
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--macos platform-noaltname docutils container">
+<p class="platform-title">macOS</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install --user --upgrade sol-usb
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--windows platform-noaltname docutils container">
+<p class="platform-title">Windows</p>
+<div class="highlight-doscon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span> pip install --upgrade sol-usb
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="development-snapshot">
+<h3>Development snapshot<a class="headerlink" href="#development-snapshot" title="Permalink to this heading"></a></h3>
+<div class="platform-picker docutils container">
+<div class="platform-choice platform--linux platform-noaltname docutils container">
+<p class="platform-title">Linux</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip3 install --user <span class="s1">&#39;git+https://github.com/shrine-maiden-heavy-industries/sol.git#egg=sol-usb&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--macos platform-noaltname docutils container">
+<p class="platform-title">macOS</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install --user <span class="s1">&#39;git+https://github.com/shrine-maiden-heavy-industries/sol.git#egg=sol-usb&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="platform-choice platform--windows platform-noaltname docutils container">
+<p class="platform-title">Windows</p>
+<div class="highlight-doscon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span> pip install git+https://github.com/shrine-maiden-heavy-industries/sol.git#egg=sol-usb
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="editable-development-snapshot">
+<h3>Editable development snapshot<a class="headerlink" href="#editable-development-snapshot" title="Permalink to this heading"></a></h3>
+<div class="platform-picker docutils container">
+<div class="platform-choice platform--linux platform-noaltname docutils container">
+<p class="platform-title">Linux</p>
+<p>To install an editable development snapshot of SOL for the first time, run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git clone https://github.com/shrine-maiden-heavy-industries/sol
+<span class="gp">$ </span><span class="nb">cd</span> sol
+<span class="gp">$ </span>pip3 install --user --editable <span class="s1">&#39;.&#39;</span>
+</pre></div>
+</div>
+<p>Any changes made to the <code class="docutils literal notranslate"><span class="pre">sol</span></code> directory will immediately affect any code that uses SOL. To update the snapshot, run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> sol
+<span class="gp">$ </span>git pull --ff-only origin main
+<span class="gp">$ </span>pip3 install --user --editable <span class="s1">&#39;.&#39;</span>
+</pre></div>
+</div>
+<p>Run the <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">--editable</span> <span class="pre">.</span></code> command each time the editable development snapshot is updated in case package dependencies have been added or changed. Otherwise, code using SOL may misbehave or crash with an <code class="docutils literal notranslate"><span class="pre">ImportError</span></code>.</p>
+</div>
+<div class="platform-choice platform--macos platform-noaltname docutils container">
+<p class="platform-title">macOS</p>
+<p>To install an editable development snapshot of SOL for the first time, run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git clone https://github.com/shrine-maiden-heavy-industries/sol
+<span class="gp">$ </span><span class="nb">cd</span> sol
+<span class="gp">$ </span>pip install --user --editable <span class="s1">&#39;.&#39;</span>
+</pre></div>
+</div>
+<p>Any changes made to the <code class="docutils literal notranslate"><span class="pre">sol</span></code> directory will immediately affect any code that uses SOL. To update the snapshot, run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> sol
+<span class="gp">$ </span>git pull --ff-only origin main
+<span class="gp">$ </span>pip install --user --editable <span class="s1">&#39;.&#39;</span>
+</pre></div>
+</div>
+<p>Run the <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--editable</span> <span class="pre">.</span></code> command each time the editable development snapshot is updated in case package dependencies have been added or changed. Otherwise, code using SOL may misbehave or crash with an <code class="docutils literal notranslate"><span class="pre">ImportError</span></code>.</p>
+</div>
+<div class="platform-choice platform--windows platform-noaltname docutils container">
+<p class="platform-title">Windows</p>
+<p>To install an editable development snapshot of SOL for the first time, run:</p>
+<div class="highlight-doscon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span> git clone https://github.com/shrine-maiden-heavy-industries/sol
+<span class="gp">&gt;</span> <span class="k">cd</span> sol
+<span class="gp">&gt;</span> pip install --editable .
+</pre></div>
+</div>
+<p>Any changes made to the <code class="docutils literal notranslate"><span class="pre">sol</span></code> directory will immediately affect any code that uses SOL. To update the snapshot, run:</p>
+<div class="highlight-doscon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span> <span class="k">cd</span> sol
+<span class="gp">&gt;</span> git pull --ff-only origin main
+<span class="gp">&gt;</span> pip install --editable .
+</pre></div>
+</div>
+<p>Run the <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--editable</span> <span class="pre">.</span></code> command each time the editable development snapshot is updated in case package dependencies have been added or changed. Otherwise, code using SOL may misbehave or crash with an <code class="docutils literal notranslate"><span class="pre">ImportError</span></code>.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/javascript">
+        function init() {
+            WaveDrom.ProcessAll();
+        }
+        window.onload = init;
+    </script>
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="features.html" class="btn btn-neutral float-left" title="Status &amp; Support" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="getting_started.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020 Great Scott Gadgets.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
