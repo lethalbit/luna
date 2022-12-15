@@ -4,12 +4,12 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Request &mdash; SOL 0.1.1.dev177 documentation</title>
+  <title>Request &mdash; SOL 0.1.1.dev178 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/styles.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/platformpicker.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/styles.css" type="text/css" />
-    <link rel="canonical" href="https://shrine-maiden-heavy-industries.github.io/sol/gateware/usb/request.html" />
+    <link rel="canonical" href="https://sol.shmdn.link/gateware/usb/request.html" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -459,7 +459,7 @@ Determines the maximum amount allowed in a response.</p></li>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.request.windows.descriptorSet.GetDescriptorSetHandler.generateROM">
-<span class="sig-name descname"><span class="pre">generateROM</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://shrine-maiden-heavy-industries.github.io/torii-hdl/api/hdl/mem.html#torii.hdl.mem.Memory" title="(in Torii-HDL v0.4.2.dev1+gc80eade)"><span class="pre">Memory</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#sol_usb.gateware.usb.request.windows.descriptorSet.GetDescriptorSetHandler.generateROM" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">generateROM</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://torii.shmdn.link/api/hdl/mem.html#torii.hdl.mem.Memory" title="(in Torii-HDL v0.4.2.dev4+gcd67548)"><span class="pre">Memory</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#sol_usb.gateware.usb.request.windows.descriptorSet.GetDescriptorSetHandler.generateROM" title="Permalink to this definition"></a></dt>
 <dd><p>Generates a ROM used to hold descriptor sets.</p>
 <p class="rubric">Notes</p>
 <p>All data is aligned to 4 byte boundaries.</p>
@@ -530,7 +530,7 @@ The memory object uses 32-bit entries which the descriptor gateware accesses acc
 </p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tuple</span></code></a> [ <a class="reference external" href="https://shrine-maiden-heavy-industries.github.io/torii-hdl/api/hdl/mem.html#torii.hdl.mem.Memory" title="(in Torii-HDL v0.4.2.dev1+gc80eade)"><code class="xref py py-class docutils literal notranslate"><span class="pre">torii.hdl.mem.Memory</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> ]</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tuple</span></code></a> [ <a class="reference external" href="https://torii.shmdn.link/api/hdl/mem.html#torii.hdl.mem.Memory" title="(in Torii-HDL v0.4.2.dev4+gcd67548)"><code class="xref py py-class docutils literal notranslate"><span class="pre">torii.hdl.mem.Memory</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> ]</p>
 </dd>
 </dl>
 </dd></dl>
