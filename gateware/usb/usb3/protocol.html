@@ -1,19 +1,40 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Protocol &mdash; SOL 0.2.1.dev10 documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/platformpicker.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
+  
+  <title>Protocol &mdash; SOL 0.2.1.dev14 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/platformpicker.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
     <link rel="canonical" href="https://sol.shmdn.link/gateware/usb/usb3/protocol.html" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
@@ -25,23 +46,43 @@
         <script src="../../../_static/wavedrom.min.js"></script>
         <script src="../../../_static/js/wavedrom.min.js"></script>
         <script src="../../../_static/js/wavedrom.skin.js"></script>
-    <script src="../../../_static/js/theme.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Request" href="request.html" />
     <link rel="prev" title="Physical" href="physical.html" /> 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
+          
+
+          
             <a href="../../../index.html" class="icon icon-home"> SOL
+          
+
+          
           </a>
+
+          
+            
+            
               <div class="version">
                 latest
               </div>
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -49,7 +90,18 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../features.html">Status &amp; Support</a><ul>
@@ -240,53 +292,99 @@
 <li class="toctree-l1"><a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/sol/">Source Code</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../index.html">SOL</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content style-external-links">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Gateware Library</a></li>
-          <li class="breadcrumb-item"><a href="../index.html">USB</a></li>
-          <li class="breadcrumb-item"><a href="index.html">USB3</a></li>
-      <li class="breadcrumb-item active">Protocol</li>
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Gateware Library</a> &raquo;</li>
+        
+          <li><a href="../index.html">USB</a> &raquo;</li>
+        
+          <li><a href="index.html">USB3</a> &raquo;</li>
+        
+      <li>Protocol</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
+            
               <a href="https://github.com/shrine-maiden-heavy-industries/sol/blob/main/docs/gateware/usb/usb3/protocol.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
+            
   <section id="module-sol_usb.gateware.usb.usb3.protocol">
-<span id="protocol"></span><h1>Protocol<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol" title="Permalink to this heading"></a></h1>
+<span id="protocol"></span><h1>Protocol<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol" title="Permalink to this heading">¶</a></h1>
 <p>USB3 Protocol-Layer modules</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.USB3ProtocolLayer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.</span></span><span class="sig-name descname"><span class="pre">USB3ProtocolLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.USB3ProtocolLayer" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.</span></span><span class="sig-name descname"><span class="pre">USB3ProtocolLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.USB3ProtocolLayer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Abstraction encapsulating the USB3 protocol layer hardware.</p>
 </dd></dl>
 
 <section id="module-sol_usb.gateware.usb.usb3.protocol.data">
-<span id="data"></span><h2>Data<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.data" title="Permalink to this heading"></a></h2>
+<span id="data"></span><h2>Data<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.data" title="Permalink to this heading">¶</a></h2>
 <p>Data header handling gateware.</p>
 <p>This file currently contains very little logic; the actual transmission framing is handled at
 the link layer; and the generation of our packets is handled by our endpoint.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.data.DataHeaderReceiver">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.data.</span></span><span class="sig-name descname"><span class="pre">DataHeaderReceiver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.data.DataHeaderReceiver" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.data.</span></span><span class="sig-name descname"><span class="pre">DataHeaderReceiver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.data.DataHeaderReceiver" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gateware that handles received Data Header packets.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Variables</dt>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>header_sink</strong> (<a class="reference internal" href="link.html#sol_usb.gateware.usb.usb3.link.header.HeaderQueue" title="sol_usb.gateware.usb.usb3.link.header.HeaderQueue"><em>HeaderQueue</em></a><em>(</em><em>)</em><em>, </em><em>input stream</em>) – Stream that brings up header packets for handling.</p>
 </dd>
 </dl>
@@ -294,16 +392,16 @@ the link layer; and the generation of our packets is handled by our endpoint.</p
 
 </section>
 <section id="module-sol_usb.gateware.usb.usb3.protocol.endpoint">
-<span id="endpoint"></span><h2>Endpoint<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.endpoint" title="Permalink to this heading"></a></h2>
+<span id="endpoint"></span><h2>Endpoint<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.endpoint" title="Permalink to this heading">¶</a></h2>
 <p>Endpoint abstractions for USB3.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.endpoint.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedEndpointInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.endpoint.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedEndpointInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointInterface" title="Permalink to this definition">¶</a></dt>
 <dd><p>Interface that connects a USB3 endpoint module to a USB device.</p>
 <p>Many non-control endpoints won’t need to use the latter half of this structure;
 it will be automatically removed by the relevant synthesis tool.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Variables</dt>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rx</strong> (<a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface" title="sol_usb.gateware.usb.stream.SuperSpeedStreamInterface"><em>SuperSpeedStreamInterface</em></a><em>(</em><em>)</em><em>, </em><em>input stream to endpoint</em>) – Receive interface for this endpoint. This stream’s <code class="docutils literal notranslate"><span class="pre">ready</span></code> signal is ignored.</p></li>
 <li><p><strong>rx_header</strong> (<a class="reference internal" href="link.html#sol_usb.gateware.usb.usb3.link.data.DataHeaderPacket" title="sol_usb.gateware.usb.usb3.link.data.DataHeaderPacket"><em>DataHeaderPacket</em></a><em>(</em><em>)</em><em>, </em><em>input to endpoint</em>) – The header associated with the packet currently being received.</p></li>
@@ -330,17 +428,17 @@ an entire packet; and it must respect the transmitter’s <code class="docutils 
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointMultiplexer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.endpoint.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedEndpointMultiplexer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointMultiplexer" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.endpoint.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedEndpointMultiplexer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointMultiplexer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Multiplexes access to the resources shared between multiple endpoint interfaces.</p>
 <p>Interfaces are added using <a class="reference internal" href="#sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointMultiplexer.add_interface" title="sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointMultiplexer.add_interface"><code class="xref py py-attr docutils literal notranslate"><span class="pre">add_interface</span></code></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Variables</dt>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>shared</strong> (<a class="reference internal" href="#sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointInterface" title="sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointInterface"><em>SuperSpeedEndpointInterface</em></a>) – The post-multiplexer endpoint interface.</p>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointMultiplexer.add_interface">
-<span class="sig-name descname"><span class="pre">add_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointInterface" title="sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointInterface"><span class="pre">SuperSpeedEndpointInterface</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointMultiplexer.add_interface" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointInterface" title="sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointInterface"><span class="pre">SuperSpeedEndpointInterface</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.endpoint.SuperSpeedEndpointMultiplexer.add_interface" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds a EndpointInterface to the multiplexer.</p>
 <p>Arbitration is not performed; it’s expected only one endpoint will be
 driving the transmit lines at a time.</p>
@@ -350,39 +448,39 @@ driving the transmit lines at a time.</p>
 
 </section>
 <section id="module-sol_usb.gateware.usb.usb3.protocol.layer">
-<span id="layer"></span><h2>Layer<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.layer" title="Permalink to this heading"></a></h2>
+<span id="layer"></span><h2>Layer<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.layer" title="Permalink to this heading">¶</a></h2>
 <p>USB3 link-layer abstraction.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.layer.USB3ProtocolLayer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.layer.</span></span><span class="sig-name descname"><span class="pre">USB3ProtocolLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.layer.USB3ProtocolLayer" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.layer.</span></span><span class="sig-name descname"><span class="pre">USB3ProtocolLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.layer.USB3ProtocolLayer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Abstraction encapsulating the USB3 protocol layer hardware.</p>
 </dd></dl>
 
 </section>
 <section id="module-sol_usb.gateware.usb.usb3.protocol.link_management">
-<span id="link-management"></span><h2>Link Management<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.link_management" title="Permalink to this heading"></a></h2>
+<span id="link-management"></span><h2>Link Management<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.link_management" title="Permalink to this heading">¶</a></h2>
 <p>Link Management Packet (LMP) -related gateware.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.link_management.PortCapabilityHeaderPacket">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.link_management.</span></span><span class="sig-name descname"><span class="pre">PortCapabilityHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.link_management.PortCapabilityHeaderPacket" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.link_management.</span></span><span class="sig-name descname"><span class="pre">PortCapabilityHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.link_management.PortCapabilityHeaderPacket" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.link_management.PortConfigurationHeaderPacket">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.link_management.</span></span><span class="sig-name descname"><span class="pre">PortConfigurationHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.link_management.PortConfigurationHeaderPacket" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.link_management.</span></span><span class="sig-name descname"><span class="pre">PortConfigurationHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.link_management.PortConfigurationHeaderPacket" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.link_management.PortConfigurationResponseHeaderPacket">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.link_management.</span></span><span class="sig-name descname"><span class="pre">PortConfigurationResponseHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.link_management.PortConfigurationResponseHeaderPacket" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.link_management.</span></span><span class="sig-name descname"><span class="pre">PortConfigurationResponseHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.link_management.PortConfigurationResponseHeaderPacket" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.link_management.LinkManagementPacketHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.link_management.</span></span><span class="sig-name descname"><span class="pre">LinkManagementPacketHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.link_management.LinkManagementPacketHandler" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.link_management.</span></span><span class="sig-name descname"><span class="pre">LinkManagementPacketHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.link_management.LinkManagementPacketHandler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gateware that handles Link Management Packets.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Variables</dt>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>header_sink</strong> (<a class="reference internal" href="link.html#sol_usb.gateware.usb.usb3.link.header.HeaderQueue" title="sol_usb.gateware.usb.usb3.link.header.HeaderQueue"><em>HeaderQueue</em></a><em>(</em><em>)</em><em>, </em><em>input stream</em>) – Stream that brings up header packets for handling.</p></li>
 <li><p><strong>header_source</strong> (<a class="reference internal" href="link.html#sol_usb.gateware.usb.usb3.link.header.HeaderQueue" title="sol_usb.gateware.usb.usb3.link.header.HeaderQueue"><em>HeaderQueue</em></a><em>(</em><em>)</em><em>, </em><em>output stream</em>) – Stream that accepts header packets for generation.</p></li>
@@ -394,14 +492,14 @@ driving the transmit lines at a time.</p>
 
 </section>
 <section id="module-sol_usb.gateware.usb.usb3.protocol.timestamp">
-<span id="timestamp"></span><h2>Timestamp<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.timestamp" title="Permalink to this heading"></a></h2>
+<span id="timestamp"></span><h2>Timestamp<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.timestamp" title="Permalink to this heading">¶</a></h2>
 <p>Isochronous Timestamp Packet (ITP)-related gateware.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.timestamp.TimestampPacketReceiver">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.timestamp.</span></span><span class="sig-name descname"><span class="pre">TimestampPacketReceiver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.timestamp.TimestampPacketReceiver" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.timestamp.</span></span><span class="sig-name descname"><span class="pre">TimestampPacketReceiver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.timestamp.TimestampPacketReceiver" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gateware that receives Isochronous Timestamp Packets, and keeps time.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Variables</dt>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>header_sink</strong> (<a class="reference internal" href="link.html#sol_usb.gateware.usb.usb3.link.header.HeaderQueue" title="sol_usb.gateware.usb.usb3.link.header.HeaderQueue"><em>HeaderQueue</em></a><em>(</em><em>)</em><em>, </em><em>input stream</em>) – Input stream carrying header packets from the link layer.</p></li>
 <li><p><strong>bus_interval_counter</strong> (<em>Signal</em><em>(</em><em>14</em><em>)</em><em>, </em><em>output</em>) – The currently timestamp, expressed in a number of 125uS bus intervals.</p></li>
@@ -413,14 +511,14 @@ driving the transmit lines at a time.</p>
 
 </section>
 <section id="module-sol_usb.gateware.usb.usb3.protocol.transaction">
-<span id="transaction"></span><h2>Transaction<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.transaction" title="Permalink to this heading"></a></h2>
+<span id="transaction"></span><h2>Transaction<a class="headerlink" href="#module-sol_usb.gateware.usb.usb3.protocol.transaction" title="Permalink to this heading">¶</a></h2>
 <p>Protocol-level Transaction Packet (flow control header) generation.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeGeneratorInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">HandshakeGeneratorInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeGeneratorInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">HandshakeGeneratorInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeGeneratorInterface" title="Permalink to this definition">¶</a></dt>
 <dd><p>Interface used by an endpoint to generate transaction packets.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Variables</dt>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>endpoint_number</strong> (<em>Signal</em><em>(</em><em>7</em><em>)</em><em>, </em><em>input to handshake generator</em>) – The endpoint number associated with the transaction packet to be generated.</p></li>
 <li><p><strong>retry_required</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input to handshake generator</em>) – If set, an ACK will be interpreted as a request to re-send the relevant packet.</p></li>
@@ -435,10 +533,10 @@ driving the transmit lines at a time.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeReceiverInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">HandshakeReceiverInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeReceiverInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">HandshakeReceiverInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeReceiverInterface" title="Permalink to this definition">¶</a></dt>
 <dd><p>Interface used by an endpoint to generate transaction packets.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Variables</dt>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>endpoint_number</strong> (<em>Signal</em><em>(</em><em>7</em><em>)</em><em>, </em><em>input to handshake generator</em>) – The endpoint number associated with the transaction packet to be generated.</p></li>
 <li><p><strong>retry_required</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input to handshake generator</em>) – If set, an ACK will be interpreted as a request to re-send the relevant packet.</p></li>
@@ -453,40 +551,40 @@ driving the transmit lines at a time.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.transaction.TransactionHeaderPacket">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">TransactionHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.TransactionHeaderPacket" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">TransactionHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.TransactionHeaderPacket" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.transaction.ACKHeaderPacket">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">ACKHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.ACKHeaderPacket" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">ACKHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.ACKHeaderPacket" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.transaction.NRDYHeaderPacket">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">NRDYHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.NRDYHeaderPacket" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">NRDYHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.NRDYHeaderPacket" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.transaction.ERDYHeaderPacket">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">ERDYHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.ERDYHeaderPacket" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">ERDYHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.ERDYHeaderPacket" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.transaction.STALLHeaderPacket">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">STALLHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.STALLHeaderPacket" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">STALLHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.STALLHeaderPacket" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.transaction.StatusHeaderPacket">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">StatusHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.StatusHeaderPacket" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">StatusHeaderPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.StatusHeaderPacket" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.transaction.TransactionPacketGenerator">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">TransactionPacketGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.TransactionPacketGenerator" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">TransactionPacketGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.TransactionPacketGenerator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Module responsible for generating Token Packets, for flow control.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Variables</dt>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>header_source</strong> (<a class="reference internal" href="link.html#sol_usb.gateware.usb.usb3.link.header.HeaderQueue" title="sol_usb.gateware.usb.usb3.link.header.HeaderQueue"><em>HeaderQueue</em></a><em>(</em><em>)</em><em>, </em><em>output stream</em>) – The stream that carries any generated header packet requests.</p></li>
 <li><p><strong>interface</strong> (<a class="reference internal" href="#sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeGeneratorInterface" title="sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeGeneratorInterface"><em>HandshakeGeneratorInterface</em></a><em>(</em><em>)</em><em>, </em><em>to/from endpoint</em>) – The control interface for our packet; meant to be carried to various endpoints.</p></li>
@@ -498,10 +596,10 @@ driving the transmit lines at a time.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.protocol.transaction.TransactionPacketReceiver">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">TransactionPacketReceiver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.TransactionPacketReceiver" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.protocol.transaction.</span></span><span class="sig-name descname"><span class="pre">TransactionPacketReceiver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.protocol.transaction.TransactionPacketReceiver" title="Permalink to this definition">¶</a></dt>
 <dd><p>Module responsible for receiving Transaction Packets from the host.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Variables</dt>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>header_sink</strong> (<a class="reference internal" href="link.html#sol_usb.gateware.usb.usb3.link.header.HeaderQueue" title="sol_usb.gateware.usb.usb3.link.header.HeaderQueue"><em>HeaderQueue</em></a><em>(</em><em>)</em><em>, </em><em>input stream</em>) – The stream that carries received header packets up from the host.</p></li>
 <li><p><strong>interface</strong> (<a class="reference internal" href="#sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeReceiverInterface" title="sol_usb.gateware.usb.usb3.protocol.transaction.HandshakeReceiverInterface"><em>HandshakeReceiverInterface</em></a><em>(</em><em>)</em><em>, </em><em>output to endpoint</em>) – Interface that detects transaction packets and reports them to the endpoint.</p></li>
@@ -521,33 +619,50 @@ driving the transmit lines at a time.</p>
     </script>
 
            </div>
+           
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="physical.html" class="btn btn-neutral float-left" title="Physical" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="request.html" class="btn btn-neutral float-right" title="Request" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="physical.html" class="btn btn-neutral float-left" title="Physical" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020 Great Scott Gadgets.</p>
-  </div>
+    <p>
+        &#169; Copyright 2020 Great Scott Gadgets.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
