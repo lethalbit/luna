@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Protocol &mdash; SOL 0.2.1.dev25 documentation</title>
+  <title>Protocol &mdash; SOL 0.2.1.dev26 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/platformpicker.css" type="text/css" />
@@ -431,7 +431,7 @@ driving the transmit lines at a time.</p>
 <li><p><strong>next_sequence</strong> (<em>Signal</em><em>(</em><em>5</em><em>)</em><em>, </em><em>input to handshake generator</em>) – Reports the next expected data packet sequence number to the host.</p></li>
 <li><p><strong>send_ack</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input to handshake generator</em>) – Strobe; requests generation of an ACK packet.</p></li>
 <li><p><strong>ready</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output from handshake generator</em>) – Asserted when the handshake generator is ready to accept new signals.</p></li>
-<li><p><strong>done</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output from handshake geneartor.</em>) – Strobe; pulsed when a requested send is complete.</p></li>
+<li><p><strong>done</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output from handshake generator.</em>) – Strobe; pulsed when a requested send is complete.</p></li>
 </ul>
 </dd>
 </dl>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Physical &mdash; SOL 0.2.1.dev25 documentation</title>
+  <title>Physical &mdash; SOL 0.2.1.dev26 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/platformpicker.css" type="text/css" />
@@ -406,7 +406,7 @@ the system’s clocks (the “clock tolerance”)</p>
 <p>To compensate, high speed serial protocols inject ‘filler’ bytes called “SKP ordered sets”,
 which can be safely discarded. This allows the slower clock to catch up to the faster one.
 [USB 3.2r1: 6.4.3].</p>
-<p>Our PHY handles the core clock tolerance compesnation inside of its own clock domain; removing
+<p>Our PHY handles the core clock tolerance compensation inside of its own clock domain; removing
 these filler sets whenever removing them helps to keep the receiver and transmitter’s clocks in sync.
 This leaves behind the sets whose removal would not directly help with CTC.</p>
 <p>This module removes those leftovers before data leaves the physical layer.</p>
@@ -427,7 +427,7 @@ This leaves behind the sets whose removal would not directly help with CTC.</p>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.physical.ctc.</span></span><span class="sig-name descname"><span class="pre">CTCSkipInserter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.physical.ctc.CTCSkipInserter" title="Permalink to this definition"></a></dt>
 <dd><p>Clock Tolerance Compensation (CTC) Skip insertion gateware.</p>
 <p>See the <code class="docutils literal notranslate"><span class="pre">CTCSkipRemover</span></code> for a description of CTC and its general operation.</p>
-<p>Our PHY handles the core clock tolerance compesnation inside of its own clock domain; adding
+<p>Our PHY handles the core clock tolerance compensation inside of its own clock domain; adding
 Skip sets whenever adding them helps to keep the transmitter’s elastic buffer from running low
 on data. However, we still need to add in our own Skip ordered sets so the other side of the link
 has enough to perform its own CTC adjustments.</p>
@@ -485,7 +485,7 @@ and to detect RX electrical idle.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb3.physical.lfps.LFPSTransceiver">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb3.physical.lfps.</span></span><span class="sig-name descname"><span class="pre">LFPSTransceiver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb3.physical.lfps.LFPSTransceiver" title="Permalink to this definition"></a></dt>
-<dd><p>Low-Frequency Periodic Signaling (LFPS) Transciever</p>
+<dd><p>Low-Frequency Periodic Signaling (LFPS) Transceiver</p>
 <p>Transmits and receives the LPFS sequences required for a USB 3.0 link.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>

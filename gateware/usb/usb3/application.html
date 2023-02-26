@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Application &mdash; SOL 0.2.1.dev25 documentation</title>
+  <title>Application &mdash; SOL 0.2.1.dev26 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/platformpicker.css" type="text/css" />
@@ -356,7 +356,7 @@ a new address on :attr:<code class="docutils literal notranslate"><span class="p
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>sink</strong> (<a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface" title="sol_usb.gateware.usb.stream.SuperSpeedStreamInterface"><em>SuperSpeedStreamInterface</em></a><em>(</em><em>)</em><em>, </em><em>input stream</em><em> [</em><em>read-only</em><em>]</em>) – Packet interface that carres in new data packets. Results should be considered questionable
+<li><p><strong>sink</strong> (<a class="reference internal" href="../stream.html#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface" title="sol_usb.gateware.usb.stream.SuperSpeedStreamInterface"><em>SuperSpeedStreamInterface</em></a><em>(</em><em>)</em><em>, </em><em>input stream</em><em> [</em><em>read-only</em><em>]</em>) – Packet interface that carries in new data packets. Results should be considered questionable
 until :attr:<code class="docutils literal notranslate"><span class="pre">packet_good</span></code> or :attr:<code class="docutils literal notranslate"><span class="pre">packet_bad</span></code> are strobed.</p></li>
 <li><p><strong>rx_good</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Strobe; indicates that the packet received passed validations and can be considered good.</p></li>
 <li><p><strong>rx_bad</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Strobe; indicates that the packet failed CRC checks, or did not end properly.</p></li>

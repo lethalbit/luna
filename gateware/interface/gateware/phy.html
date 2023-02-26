@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gateware PHY &mdash; SOL 0.2.1.dev25 documentation</title>
+  <title>Gateware PHY &mdash; SOL 0.2.1.dev26 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/platformpicker.css" type="text/css" />
@@ -277,7 +277,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.interface.gateware_phy.phy.GatewarePHY">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.phy.</span></span><span class="sig-name descname"><span class="pre">GatewarePHY</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.phy.GatewarePHY" title="Permalink to this definition"></a></dt>
-<dd><p>Gateware that implements a UTMI-compatible transciever using raw FPGA I/O.</p>
+<dd><p>Gateware that implements a UTMI-compatible transceiver using raw FPGA I/O.</p>
 <section id="clock-domains">
 <h2>Clock Domains<a class="headerlink" href="#clock-domains" title="Permalink to this heading"></a></h2>
 <dl class="simple">
@@ -353,7 +353,7 @@ contains a <code class="docutils literal notranslate"><span class="pre">vbus_val
 <dt>session_end: Signal(), output</dt><dd><p>Indicates that no VBUS signal is present. This signal is valid iff the I/O parameter
 contains a <code class="docutils literal notranslate"><span class="pre">vbus_valid</span></code> element; otherwise it is hard connected to ‘0’</p>
 </dd>
-<dt>xcvr_select: Signal(2), input</dt><dd><p>Selects the active USB speed. This transceiver only functions as a full speed transciever; so
+<dt>xcvr_select: Signal(2), input</dt><dd><p>Selects the active USB speed. This transceiver only functions as a full speed transceiver; so
 this signal is effectively ignored. To support connection to high-speed gateware, this module
 will prevent the USB lines from being driven when this signal is 0b00; allowing the gateware to
 attempt a high-speed detection handshake without adverse affect.</p>
@@ -370,7 +370,7 @@ a value of 1 prevents D+ and D- from being driven; and a value of 2 disables bit
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">param io<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A record containing the raw I/O signals to be used to drive our I/O-based USB connnection.
+<dd class="field-odd"><p>A record containing the raw I/O signals to be used to drive our I/O-based USB connection.
 The <code class="docutils literal notranslate"><span class="pre">d_p</span></code> and <code class="docutils literal notranslate"><span class="pre">d_n</span></code> signals are mandatory; the <code class="docutils literal notranslate"><span class="pre">pullup</span></code>, <code class="docutils literal notranslate"><span class="pre">pulldown</span></code>,
 and <code class="docutils literal notranslate"><span class="pre">vbus_valid</span></code> signals are optional.</p>
 </dd>
