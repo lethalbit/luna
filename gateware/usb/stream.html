@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stream &mdash; SOL 0.2.1.dev28 documentation</title>
+  <title>Stream &mdash; SOL 0.1.dev1 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/styles.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/platformpicker.css" type="text/css" />
@@ -274,7 +274,7 @@
 <p>Core stream definitions.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBInStreamInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBInStreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBInStreamInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBInStreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBInStreamInterface" title="Permalink to this definition"></a></dt>
 <dd><p>Variant of SOL’s StreamInterface optimized for USB IN transmission.</p>
 <p>This stream interface is nearly identical to StreamInterface, with the following
 restriction: the <cite>valid</cite> signal _must_ be held high for every packet between <cite>first</cite>
@@ -298,7 +298,7 @@ ready   | tx_ready</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBOutStreamInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBOutStreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBOutStreamInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBOutStreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBOutStreamInterface" title="Permalink to this definition"></a></dt>
 <dd><p>Variant of SOL’s StreamInterface optimized for USB OUT receipt.</p>
 <p>This is a heavily simplified version of our StreamInterface, which omits the ‘first’,
 ‘last’, and ‘ready’ signals. Instead, the streamer indicates when data is valid using
@@ -366,7 +366,7 @@ timed so it is strobed after :attr:<code class="docutils literal notranslate"><s
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBRawSuperSpeedStream">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBRawSuperSpeedStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBRawSuperSpeedStream" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBRawSuperSpeedStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBRawSuperSpeedStream" title="Permalink to this definition"></a></dt>
 <dd><p>Variant of SOL’s StreamInterface optimized for carrying raw USB3 data.</p>
 <p>Low-level USB3 data-streams consist of both data bytes (‘data’) and control flags,
 which differentiate standard data bytes from data bytes used for control.</p>
@@ -393,7 +393,7 @@ gearing that makes USB3’s high-speed signals manageable.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.SuperSpeedStreamInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedStreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedStreamInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface" title="Permalink to this definition"></a></dt>
 <dd><p>Convenience variant of our StreamInterface sized to work with SuperSpeed streams.</p>
 </dd></dl>
 

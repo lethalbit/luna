@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Request &mdash; SOL 0.2.1.dev28 documentation</title>
+  <title>Request &mdash; SOL 0.1.dev1 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/styles.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/platformpicker.css" type="text/css" />
@@ -317,7 +317,7 @@ of acknowledged.</p></li>
 <p>Request components shared between USB2 and USB3.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.request.interface.SetupPacket">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.request.interface.</span></span><span class="sig-name descname"><span class="pre">SetupPacket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.request.interface.SetupPacket" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.request.interface.</span></span><span class="sig-name descname"><span class="pre">SetupPacket</span></span><a class="headerlink" href="#sol_usb.gateware.usb.request.interface.SetupPacket" title="Permalink to this definition"></a></dt>
 <dd><p>Record capturing the content of a setup packet.</p>
 <dl>
 <dt>Components (O = output from setup parser; read-only input to others):</dt><dd><dl class="simple">
@@ -470,7 +470,7 @@ Determines the maximum amount allowed in a response.</p></li>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.request.windows.descriptorSet.GetDescriptorSetHandler.generateROM">
-<span class="sig-name descname"><span class="pre">generateROM</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://torii.shmdn.link/api/hdl/mem.html#torii.hdl.mem.Memory" title="(in Torii-HDL v0.4.5.dev40+g3382cfd3)"><span class="pre">Memory</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#sol_usb.gateware.usb.request.windows.descriptorSet.GetDescriptorSetHandler.generateROM" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">generateROM</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://torii.shmdn.link/api/hdl/mem.html#torii.hdl.mem.Memory" title="(in Torii-HDL v0.1.dev1+gd53cc07)"><span class="pre">Memory</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#sol_usb.gateware.usb.request.windows.descriptorSet.GetDescriptorSetHandler.generateROM" title="Permalink to this definition"></a></dt>
 <dd><p>Generates a ROM used to hold descriptor sets.</p>
 <p class="rubric">Notes</p>
 <p>All data is aligned to 4 byte boundaries.</p>
@@ -533,7 +533,7 @@ The memory object uses 32-bit entries which the descriptor gateware accesses acc
 </p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tuple</span></code></a> [ <a class="reference external" href="https://torii.shmdn.link/api/hdl/mem.html#torii.hdl.mem.Memory" title="(in Torii-HDL v0.4.5.dev40+g3382cfd3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">torii.hdl.mem.Memory</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> ]</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tuple</span></code></a> [ <a class="reference external" href="https://torii.shmdn.link/api/hdl/mem.html#torii.hdl.mem.Memory" title="(in Torii-HDL v0.1.dev1+gd53cc07)"><code class="xref py py-class docutils literal notranslate"><span class="pre">torii.hdl.mem.Memory</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> ]</p>
 </dd>
 </dl>
 </dd></dl>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Packet &mdash; SOL 0.2.1.dev28 documentation</title>
+  <title>Packet &mdash; SOL 0.1.dev1 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/styles.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/platformpicker.css" type="text/css" />
@@ -275,7 +275,7 @@
 <p>Contains the gatware module necessary to interpret and generate low-level USB packets.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.HandshakeExchangeInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">HandshakeExchangeInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.HandshakeExchangeInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">HandshakeExchangeInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_detector</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.HandshakeExchangeInterface" title="Permalink to this definition"></a></dt>
 <dd><p>Record that carries handshakes detected -or- generated between modules.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
@@ -299,7 +299,7 @@ Otherwise, this will be considered an interface to a generator that accepts hand
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.DataCRCInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">DataCRCInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.DataCRCInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">DataCRCInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.DataCRCInterface" title="Permalink to this definition"></a></dt>
 <dd><p>Record providing an interface to a USB CRC-16 generator.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
@@ -313,7 +313,7 @@ Otherwise, this will be considered an interface to a generator that accepts hand
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.TokenDetectorInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">TokenDetectorInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.TokenDetectorInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">TokenDetectorInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.TokenDetectorInterface" title="Permalink to this definition"></a></dt>
 <dd><p>Record providing an interface to a USB token detector.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
@@ -337,7 +337,7 @@ Indicates when the token packet can be responded to.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">InterpacketTimerInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">InterpacketTimerInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface" title="Permalink to this definition"></a></dt>
 <dd><p>Record providing an interface to our interpacket timer.</p>
 <p>See [USB2.0: 7.1.18] and the USBInterpacketTimer gateware for more information.</p>
 <dl class="field-list simple">
