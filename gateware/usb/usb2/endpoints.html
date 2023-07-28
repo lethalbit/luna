@@ -378,6 +378,7 @@ a second packet.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>stream</strong> (<a class="reference internal" href="../../stream/index.html#sol_usb.gateware.stream.StreamInterface" title="sol_usb.gateware.stream.StreamInterface"><em>StreamInterface</em></a><em>, </em><em>input stream</em>) – Full-featured stream interface that carries the data we’ll transmit to the host.</p></li>
 <li><p><strong>flush</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Assert to cause all pending data to be transmitted as soon as possible.</p></li>
+<li><p><strong>discard</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Assert to cause all pending data to be discarded.</p></li>
 <li><p><strong>interface</strong> (<a class="reference internal" href="endpoint.html#sol_usb.gateware.usb.usb2.endpoint.EndpointInterface" title="sol_usb.gateware.usb.usb2.endpoint.EndpointInterface"><em>EndpointInterface</em></a>) – Communications link to our USB device.</p></li>
 </ul>
 </dd>

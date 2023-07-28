@@ -285,9 +285,11 @@ grab the UTMITranslator from <cite>sol.gateware.interface.ulpi</cite>.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>stream</strong> (<a class="reference internal" href="../stream/index.html#sol_usb.gateware.stream.StreamInterface" title="sol_usb.gateware.stream.StreamInterface"><em>StreamInterface</em></a><em>(</em><em>)</em><em>, </em><em>output stream</em>) – Stream that carries USB analyzer data.</p></li>
 <li><p><strong>idle</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output</em>) – Asserted iff the analyzer is not currently receiving data.</p></li>
+<li><p><strong>stopped</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output</em>) – Asserted iff the analyzer is stopped and not capturing packets.</p></li>
 <li><p><strong>overrun</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output</em>) – Asserted iff the analyzer has received more data than it can store in its internal buffer.
 Occurs if :attr:<code class="docutils literal notranslate"><span class="pre">stream</span></code> is not being read quickly enough.</p></li>
 <li><p><strong>capturing</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output</em>) – Asserted iff the analyzer is currently capturing a packet.</p></li>
+<li><p><strong>discarding</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output</em>) – Asserted iff the analyzer is discarding the contents of its internal buffer.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>

@@ -294,6 +294,8 @@ every time a full packet size is reached.</p>
 <li><p><strong>flush</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – If high, data that is currently buffered will be sent out as soon as possible. The module will
 not wait further for the input stream to end, or to have a max-length packet; it will send a
 packet as soon as possible.</p></li>
+<li><p><strong>discard</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – If high, data that is currently buffered will be discarded. The module will not buffer further
+data, or send any further packets, until this signal is low again.</p></li>
 <li><p><strong>data_pid</strong> (<em>Signal</em><em>(</em><em>2</em><em>)</em><em>, </em><em>output</em>) – The LSBs of the data PID to be issued with the current packet. Used with <code class="xref py py-attr docutils literal notranslate"><span class="pre">packet_stream</span></code>
 to indicate the PID of the transmitted packet.</p></li>
 <li><p><strong>tokenizer</strong> (<a class="reference internal" href="packet.html#sol_usb.gateware.usb.usb2.packet.TokenDetectorInterface" title="sol_usb.gateware.usb.usb2.packet.TokenDetectorInterface"><em>TokenDetectorInterface</em></a><em>, </em><em>input</em>) – Connection to a detector that detects incoming tokens packets.</p></li>
