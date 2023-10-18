@@ -14,16 +14,16 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=4b1cca27"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../../../_static/platformpicker.js"></script>
         <script src="../../../_static/wavedrom.skin.js"></script>
         <script src="../../../_static/wavedrom.min.js"></script>
-        <script src="../../../_static/js/wavedrom.min.js"></script>
-        <script src="../../../_static/js/wavedrom.skin.js"></script>
+        <script src="../../../_static/js/wavedrom.min.js?v=db79c4d1"></script>
+        <script src="../../../_static/js/wavedrom.skin.js?v=986d6b75"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -43,7 +43,7 @@
             SOL
           </a>
               <div class="version">
-                latest
+                0.1.dev1+gc5ec462
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -271,11 +271,11 @@
            <div itemprop="articleBody">
              
   <section id="module-sol_usb.gateware.usb.usb2.packet">
-<span id="packet"></span><h1>Packet<a class="headerlink" href="#module-sol_usb.gateware.usb.usb2.packet" title="Permalink to this heading"></a></h1>
+<span id="packet"></span><h1>Packet<a class="headerlink" href="#module-sol_usb.gateware.usb.usb2.packet" title="Link to this heading"></a></h1>
 <p>Contains the gatware module necessary to interpret and generate low-level USB packets.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.HandshakeExchangeInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">HandshakeExchangeInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_detector</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.HandshakeExchangeInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">HandshakeExchangeInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_detector</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.HandshakeExchangeInterface" title="Link to this definition"></a></dt>
 <dd><p>Record that carries handshakes detected -or- generated between modules.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
@@ -291,7 +291,7 @@ Unused in a detector, currently.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>is_detector</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If true, this will be considered an interface to a detector that identifies handshakes.
+<dd class="field-even"><p><strong>is_detector</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a>) – If true, this will be considered an interface to a detector that identifies handshakes.
 Otherwise, this will be considered an interface to a generator that accepts handshake requests.</p>
 </dd>
 </dl>
@@ -299,7 +299,7 @@ Otherwise, this will be considered an interface to a generator that accepts hand
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.DataCRCInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">DataCRCInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.DataCRCInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">DataCRCInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.DataCRCInterface" title="Link to this definition"></a></dt>
 <dd><p>Record providing an interface to a USB CRC-16 generator.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
@@ -313,7 +313,7 @@ Otherwise, this will be considered an interface to a generator that accepts hand
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.TokenDetectorInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">TokenDetectorInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.TokenDetectorInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">TokenDetectorInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.TokenDetectorInterface" title="Link to this definition"></a></dt>
 <dd><p>Record providing an interface to a USB token detector.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
@@ -337,7 +337,7 @@ Indicates when the token packet can be responded to.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">InterpacketTimerInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">InterpacketTimerInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface" title="Link to this definition"></a></dt>
 <dd><p>Record providing an interface to our interpacket timer.</p>
 <p>See [USB2.0: 7.1.18] and the USBInterpacketTimer gateware for more information.</p>
 <dl class="field-list simple">
@@ -352,7 +352,7 @@ Indicates when the token packet can be responded to.</p></li>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface.attach">
-<span class="sig-name descname"><span class="pre">attach</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">subordinates</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface.attach" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">attach</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">subordinates</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface.attach" title="Link to this definition"></a></dt>
 <dd><p>Attaches subordinate interfaces to the given timer interface.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -367,7 +367,7 @@ to the list of all resets.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.USBTokenDetector">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBTokenDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBTokenDetector" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBTokenDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBTokenDetector" title="Link to this definition"></a></dt>
 <dd><p>Gateware that parses token packets and generates relevant events.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
@@ -383,7 +383,7 @@ recent token.</p></li>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>utmi</strong> (<a class="reference internal" href="../../interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIInterface" title="sol_usb.gateware.interface.utmi.UTMIInterface"><em>UTMIInterface</em></a>) – The UTMI bus to observe.</p></li>
-<li><p><strong>filter_by_address</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If true, this detector will only report events for the address supplied in the address[] field.</p></li>
+<li><p><strong>filter_by_address</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a>) – If true, this detector will only report events for the address supplied in the address[] field.</p></li>
 </ul>
 </dd>
 </dl>
@@ -391,7 +391,7 @@ recent token.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.USBHandshakeDetector">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBHandshakeDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBHandshakeDetector" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBHandshakeDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBHandshakeDetector" title="Link to this definition"></a></dt>
 <dd><p>Gateware that detects handshake packets.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
@@ -405,7 +405,7 @@ recent token.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.USBDataPacketCRC">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBDataPacketCRC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketCRC" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBDataPacketCRC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketCRC" title="Link to this definition"></a></dt>
 <dd><p>Gateware that computes a running CRC-16.</p>
 <p>By default, this module has no connections to the modules that use it.</p>
 <p>These are added using <a class="reference internal" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketCRC.add_interface" title="sol_usb.gateware.usb.usb2.packet.USBDataPacketCRC.add_interface"><code class="xref py py-attr docutils literal notranslate"><span class="pre">add_interface</span></code></a>; this module supports an arbitrary
@@ -420,12 +420,12 @@ number of connection interfaces; see <a class="reference internal" href="#sol_us
 </ul>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>initial_value</strong> (<em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>Const</em><em>]</em>) – The initial value of the CRC shift register; the USB default is used if not provided.</p>
+<dd class="field-even"><p><strong>initial_value</strong> (<em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em>, </em><em>Const</em><em>]</em>) – The initial value of the CRC shift register; the USB default is used if not provided.</p>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.USBDataPacketCRC.add_interface">
-<span class="sig-name descname"><span class="pre">add_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#sol_usb.gateware.usb.usb2.packet.DataCRCInterface" title="sol_usb.gateware.usb.usb2.packet.DataCRCInterface"><span class="pre">DataCRCInterface</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketCRC.add_interface" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#sol_usb.gateware.usb.usb2.packet.DataCRCInterface" title="sol_usb.gateware.usb.usb2.packet.DataCRCInterface"><span class="pre">DataCRCInterface</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketCRC.add_interface" title="Link to this definition"></a></dt>
 <dd><p>Adds an interface to the CRC generator module.</p>
 <p>Each interface can reset the CRC; and can read the current CRC value.
 No arbitration is performed; it’s assumed that no more than one interface
@@ -443,7 +443,7 @@ multiplpe CRCs.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.USBDataPacketReceiver">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBDataPacketReceiver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketReceiver" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBDataPacketReceiver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketReceiver" title="Link to this definition"></a></dt>
 <dd><p>Gateware that converts received USB data packets into a data-stream packets.</p>
 <p>It’s important to note that packet payloads are mostly directly carried over from UTMI.
 Since USB data is received -prior- to its CRC, one cannot know if a packet is valid until
@@ -470,8 +470,8 @@ and thus we’re now ready to respond with a handshake.</p></li>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>utmi</strong> (<a class="reference internal" href="../../interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIInterface" title="sol_usb.gateware.interface.utmi.UTMIInterface"><em>UTMIInterface</em></a><em>, or </em><em>equivalent</em>) – The UTMI bus to observe.</p></li>
-<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The maximum packet (payload) size to be deserialized, in bytes.</p></li>
-<li><p><strong>standalone</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Debug value. If True, a submodule CRC generator will be created.</p></li>
+<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The maximum packet (payload) size to be deserialized, in bytes.</p></li>
+<li><p><strong>standalone</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a>) – Debug value. If True, a submodule CRC generator will be created.</p></li>
 <li><p><strong>speed</strong> (<a class="reference internal" href="index.html#sol_usb.gateware.usb.usb2.USBSpeed" title="sol_usb.gateware.usb.usb2.USBSpeed"><em>USBSpeed</em></a>) – USBSpeed signal or constant that specifies our speed in standalone mode.</p></li>
 </ul>
 </dd>
@@ -480,7 +480,7 @@ and thus we’re now ready to respond with a handshake.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.USBDataPacketDeserializer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBDataPacketDeserializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketDeserializer" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBDataPacketDeserializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketDeserializer" title="Link to this definition"></a></dt>
 <dd><p>Gateware that captures USB data packet contents and parallelizes them.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
@@ -489,14 +489,14 @@ and thus we’re now ready to respond with a handshake.</p></li>
 <li><p><strong>new_packet</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output</em>) – Strobe that pulses high for a single cycle when a new packet is delivered.</p></li>
 <li><p><strong>packet_id</strong> (<em>Signal</em><em>(</em><em>4</em><em>)</em><em>, </em><em>output</em>) – The packet ID of the captured PID.</p></li>
 <li><p><strong>packet</strong> (<em>Signal</em><em>(</em><em>max_packet_size</em><em>)</em><em>, </em><em>output</em>) – Packet data for a the most recently received packet.</p></li>
-<li><p><strong>length</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.11)"><em>range</em></a><em>(</em><em>0</em><em>, </em><em>max_packet_length +1</em><em>)</em><em>)</em><em>, </em><em>output</em>) – The length of the packet data presented on the packet[] output.</p></li>
+<li><p><strong>length</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.12)"><em>range</em></a><em>(</em><em>0</em><em>, </em><em>max_packet_length +1</em><em>)</em><em>)</em><em>, </em><em>output</em>) – The length of the packet data presented on the packet[] output.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>utmi</strong> (<a class="reference internal" href="../../interface/utmi.html#sol_usb.gateware.interface.utmi.UTMIInterface" title="sol_usb.gateware.interface.utmi.UTMIInterface"><em>UTMIInterface</em></a><em>, or </em><em>equivalent</em>) – The UTMI bus to observe.</p></li>
-<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The maximum packet (payload) size to be deserialized, in bytes.</p></li>
-<li><p><strong>create_crc_generator</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If True, a submodule CRC generator will be created. Excellent for testing.</p></li>
+<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The maximum packet (payload) size to be deserialized, in bytes.</p></li>
+<li><p><strong>create_crc_generator</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a>) – If True, a submodule CRC generator will be created. Excellent for testing.</p></li>
 </ul>
 </dd>
 </dl>
@@ -504,7 +504,7 @@ and thus we’re now ready to respond with a handshake.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.USBDataPacketGenerator">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBDataPacketGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketGenerator" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBDataPacketGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBDataPacketGenerator" title="Link to this definition"></a></dt>
 <dd><p>Module that converts a FIFO-style stream into a USB data packet.</p>
 <p>Handles steps such as PID generation and CRC-16 injection.</p>
 <p>As a special case, if the stream pulses <cite>last</cite> (with valid = 1) without pulsing
@@ -521,14 +521,14 @@ zero and then perform PID toggling by toggling the LSb.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>standalone</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If True, this unit will include its internal CRC generator. Perfect for unit testing or debugging.</p>
+<dd class="field-even"><p><strong>standalone</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a>) – If True, this unit will include its internal CRC generator. Perfect for unit testing or debugging.</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.USBHandshakeGenerator">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBHandshakeGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBHandshakeGenerator" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBHandshakeGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBHandshakeGenerator" title="Link to this definition"></a></dt>
 <dd><p>Module that generates handshake packets, on request.</p>
 <p>Attributes:</p>
 <dl class="simple">
@@ -545,7 +545,7 @@ zero and then perform PID toggling by toggling the LSb.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.USBInterpacketTimer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBInterpacketTimer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBInterpacketTimer" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.packet.</span></span><span class="sig-name descname"><span class="pre">USBInterpacketTimer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBInterpacketTimer" title="Link to this definition"></a></dt>
 <dd><p>Module that tracks inter-packet timings, enforcing spec-mandated packet gaps.</p>
 <p>Ports other than <code class="xref py py-attr docutils literal notranslate"><span class="pre">speed</span></code> are added dynamically via :method:add_interface`.</p>
 <dl class="field-list simple">
@@ -556,7 +556,7 @@ zero and then perform PID toggling by toggling the LSb.</p></li>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.packet.USBInterpacketTimer.add_interface">
-<span class="sig-name descname"><span class="pre">add_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface" title="sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface"><span class="pre">InterpacketTimerInterface</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBInterpacketTimer.add_interface" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface" title="sol_usb.gateware.usb.usb2.packet.InterpacketTimerInterface"><span class="pre">InterpacketTimerInterface</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.packet.USBInterpacketTimer.add_interface" title="Link to this definition"></a></dt>
 <dd><p>Adds a connection to a user of this module.</p>
 <p>This module performs no multiplexing; it’s assumed only one interface will be active at a time.</p>
 <dl class="field-list simple">

@@ -14,16 +14,16 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=4b1cca27"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../../../_static/platformpicker.js"></script>
         <script src="../../../_static/wavedrom.skin.js"></script>
         <script src="../../../_static/wavedrom.min.js"></script>
-        <script src="../../../_static/js/wavedrom.min.js"></script>
-        <script src="../../../_static/js/wavedrom.skin.js"></script>
+        <script src="../../../_static/js/wavedrom.min.js?v=db79c4d1"></script>
+        <script src="../../../_static/js/wavedrom.skin.js?v=986d6b75"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -43,7 +43,7 @@
             SOL
           </a>
               <div class="version">
-                latest
+                0.1.dev1+gc5ec462
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -271,10 +271,10 @@
            <div itemprop="articleBody">
              
   <section id="endpoint">
-<h1>Endpoint<a class="headerlink" href="#endpoint" title="Permalink to this heading"></a></h1>
+<h1>Endpoint<a class="headerlink" href="#endpoint" title="Link to this heading"></a></h1>
 </section>
 <section id="gateware-endpoint-interfaces">
-<h1>Gateware Endpoint Interfaces<a class="headerlink" href="#gateware-endpoint-interfaces" title="Permalink to this heading"></a></h1>
+<h1>Gateware Endpoint Interfaces<a class="headerlink" href="#gateware-endpoint-interfaces" title="Link to this heading"></a></h1>
 <p>The SOL architecture separates gateware into two distinct groups: the <em>core device</em>, responsible for the
 low-level communications common to all devices, and <em>endpoint interfaces</em>, which perform high-level communications,
 and which are often responsible for tailoring each device for its intended application:</p>
@@ -292,15 +292,15 @@ interface&quot; in this document.*
 <p>As a single endpoint interface may handle packets for multiple endpoints; it is entirely possible to have a device
 that talks on multiple endpoints, but which uses only one endpoint interface.</p>
 <section id="exclusivity">
-<h2>Exclusivity<a class="headerlink" href="#exclusivity" title="Permalink to this heading"></a></h2>
+<h2>Exclusivity<a class="headerlink" href="#exclusivity" title="Link to this heading"></a></h2>
 <p>A SOL <code class="docutils literal notranslate"><span class="pre">USBDevice</span></code> performs no arbitration – if two endpoint interfaces attempt to transmit at the same time, the
 result is undefined; and often will result in undesirable output. Accordingly, it’s important to ensure a “clear
 delineation of responsibility” across endpoint interfaces. This is often accomplished by ensuring only one endpoint
 interface handles a given endpoint or request type.</p>
-<span class="target" id="module-sol_usb.gateware.usb.usb2.endpoint"></span><p>Gateware for working with abstract endpoints.</p>
+<p id="module-sol_usb.gateware.usb.usb2.endpoint">Gateware for working with abstract endpoints.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.endpoint.EndpointInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoint.</span></span><span class="sig-name descname"><span class="pre">EndpointInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoint.EndpointInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoint.</span></span><span class="sig-name descname"><span class="pre">EndpointInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoint.EndpointInterface" title="Link to this definition"></a></dt>
 <dd><p>Interface that connects a USB endpoint module to a USB device.</p>
 <p>Many non-control endpoints won’t need to use the latter half of this structure;
 it will be automatically removed by the relevant synthesis tool.</p>
@@ -336,7 +336,7 @@ Indicates that an interpacket delay has passed after an <cite>rx_complete</cite>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoint.</span></span><span class="sig-name descname"><span class="pre">USBEndpointMultiplexer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoint.</span></span><span class="sig-name descname"><span class="pre">USBEndpointMultiplexer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer" title="Link to this definition"></a></dt>
 <dd><p>Multiplexes access to the resources shared between multiple endpoint interfaces.</p>
 <p>Interfaces are added using <a class="reference internal" href="#sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer.add_interface" title="sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer.add_interface"><code class="xref py py-attr docutils literal notranslate"><span class="pre">add_interface</span></code></a>.</p>
 <dl class="field-list simple">
@@ -346,7 +346,7 @@ Indicates that an interpacket delay has passed after an <cite>rx_complete</cite>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer.add_interface">
-<span class="sig-name descname"><span class="pre">add_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#sol_usb.gateware.usb.usb2.endpoint.EndpointInterface" title="sol_usb.gateware.usb.usb2.endpoint.EndpointInterface"><span class="pre">EndpointInterface</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer.add_interface" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#sol_usb.gateware.usb.usb2.endpoint.EndpointInterface" title="sol_usb.gateware.usb.usb2.endpoint.EndpointInterface"><span class="pre">EndpointInterface</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer.add_interface" title="Link to this definition"></a></dt>
 <dd><p>Adds a EndpointInterface to the multiplexer.</p>
 <p>Arbitration is not performed; it’s expected only one endpoint will be
 driving the transmit lines at a time.</p>
@@ -354,7 +354,7 @@ driving the transmit lines at a time.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer.or_join_interface_signals">
-<span class="sig-name descname"><span class="pre">or_join_interface_signals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signal_for_interface</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer.or_join_interface_signals" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">or_join_interface_signals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signal_for_interface</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoint.USBEndpointMultiplexer.or_join_interface_signals" title="Link to this definition"></a></dt>
 <dd><p>Joins together a set of signals on each interface by OR’ing the signals together.</p>
 </dd></dl>
 

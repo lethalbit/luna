@@ -14,16 +14,16 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=4b1cca27"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../../../_static/platformpicker.js"></script>
         <script src="../../../_static/wavedrom.skin.js"></script>
         <script src="../../../_static/wavedrom.min.js"></script>
-        <script src="../../../_static/js/wavedrom.min.js"></script>
-        <script src="../../../_static/js/wavedrom.skin.js"></script>
+        <script src="../../../_static/js/wavedrom.min.js?v=db79c4d1"></script>
+        <script src="../../../_static/js/wavedrom.skin.js?v=986d6b75"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -43,7 +43,7 @@
             SOL
           </a>
               <div class="version">
-                latest
+                0.1.dev1+gc5ec462
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -271,12 +271,12 @@
            <div itemprop="articleBody">
              
   <section id="module-sol_usb.gateware.usb.usb2.device">
-<span id="device"></span><h1>Device<a class="headerlink" href="#module-sol_usb.gateware.usb.usb2.device" title="Permalink to this heading"></a></h1>
+<span id="device"></span><h1>Device<a class="headerlink" href="#module-sol_usb.gateware.usb.usb2.device" title="Link to this heading"></a></h1>
 <p>Contains the organizing hardware used to add USB Device functionality
 to your own designs; including the core <a class="reference internal" href="#sol_usb.gateware.usb.usb2.device.USBDevice" title="sol_usb.gateware.usb.usb2.device.USBDevice"><code class="xref py py-class docutils literal notranslate"><span class="pre">USBDevice</span></code></a> class.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.device.USBDevice">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.device.</span></span><span class="sig-name descname"><span class="pre">USBDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.device.USBDevice" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.device.</span></span><span class="sig-name descname"><span class="pre">USBDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.device.USBDevice" title="Link to this definition"></a></dt>
 <dd><p>Core gateware common to all SOL USB2 devices.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">USBDevice</span></code> module contains the low-level communications hardware necessary to implement a USB device;
 including hardware for maintaining device state, detecting events, reading data from the host, and generating
@@ -289,7 +289,7 @@ which can easily be attached using its <cite>attach</cite> method.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>bus</strong> (<em>[</em><em>UTMI interface</em><em>, </em><em>ULPI Interface</em><em>]</em>) – The UTMI or ULPI PHY connection to be used for communications.</p></li>
-<li><p><strong>handle_clocking</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>Optional</em>) – True iff we should attempt to connect up the <cite>usb</cite> clock domain to the PHY
+<li><p><strong>handle_clocking</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>Optional</em>) – True iff we should attempt to connect up the <cite>usb</cite> clock domain to the PHY
 automatically based on the clk signals’s I/O direction. This option may not work
 for non-simple connections; in which case you will need to connect the clock signal
 yourself.</p></li>
@@ -315,7 +315,7 @@ the device to enter lower-power states.</p></li>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.device.USBDevice.add_endpoint">
-<span class="sig-name descname"><span class="pre">add_endpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">endpoint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.device.USBDevice.add_endpoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_endpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">endpoint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.device.USBDevice.add_endpoint" title="Link to this definition"></a></dt>
 <dd><p>Adds an endpoint interface to the device.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -327,7 +327,7 @@ the device to enter lower-power states.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.device.USBDevice.add_control_endpoint">
-<span class="sig-name descname"><span class="pre">add_control_endpoint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.device.USBDevice.add_control_endpoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_control_endpoint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.device.USBDevice.add_control_endpoint" title="Link to this definition"></a></dt>
 <dd><p>Adds a basic control endpoint to the device.</p>
 <p>Does not add any request handlers. If you want standard request handlers;
 <a class="reference internal" href="#sol_usb.gateware.usb.usb2.device.USBDevice.add_standard_control_endpoint" title="sol_usb.gateware.usb.usb2.device.USBDevice.add_standard_control_endpoint"><code class="xref py py-attr docutils literal notranslate"><span class="pre">add_standard_control_endpoint</span></code></a> automatically adds standard request handlers.</p>
@@ -340,11 +340,11 @@ the device to enter lower-power states.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.device.USBDevice.add_standard_control_endpoint">
-<span class="sig-name descname"><span class="pre">add_standard_control_endpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">descriptors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DeviceDescriptorCollection</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.device.USBDevice.add_standard_control_endpoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_standard_control_endpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">descriptors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DeviceDescriptorCollection</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.device.USBDevice.add_standard_control_endpoint" title="Link to this definition"></a></dt>
 <dd><p>Adds a control endpoint with standard request handlers to the device.</p>
 <p>Parameters will be passed on to StandardRequestHandler.</p>
 <section id="return-value">
-<h2>Return value<a class="headerlink" href="#return-value" title="Permalink to this heading"></a></h2>
+<h2>Return value<a class="headerlink" href="#return-value" title="Link to this heading"></a></h2>
 <p>The endpoint object created.</p>
 </section>
 </dd></dl>

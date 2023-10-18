@@ -14,16 +14,16 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=4b1cca27"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/platformpicker.js"></script>
         <script src="../_static/wavedrom.skin.js"></script>
         <script src="../_static/wavedrom.min.js"></script>
-        <script src="../_static/js/wavedrom.min.js"></script>
-        <script src="../_static/js/wavedrom.skin.js"></script>
+        <script src="../_static/js/wavedrom.min.js?v=db79c4d1"></script>
+        <script src="../_static/js/wavedrom.skin.js?v=986d6b75"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -41,7 +41,7 @@
             SOL
           </a>
               <div class="version">
-                latest
+                0.1.dev1+gc5ec462
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -268,12 +268,12 @@ Self-made Hardware Bringup</li>
              
   <section id="self-made-hardware-bringup">
 <h1>==========================
-Self-made Hardware Bringup<a class="headerlink" href="#self-made-hardware-bringup" title="Permalink to this heading"></a></h1>
+Self-made Hardware Bringup<a class="headerlink" href="#self-made-hardware-bringup" title="Link to this heading"></a></h1>
 <p>This guide is intended to help you bring up a LUNA board you’ve built
 yourself. If you’ve received your board from Great Scott Gadgets, it
 should already be set up, and you shouldn’t need to follow these steps.</p>
 <section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading"></a></h2>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>A LUNA board with a populated <em>Debug Controller</em> microprocessor. This
 is the SAMD microcontroller located in the Debug section at the
@@ -291,7 +291,7 @@ called something like <code class="docutils literal notranslate"><span class="pr
 </ul>
 </section>
 <section id="bring-up-process">
-<h2>Bring-up Process<a class="headerlink" href="#bring-up-process" title="Permalink to this heading"></a></h2>
+<h2>Bring-up Process<a class="headerlink" href="#bring-up-process" title="Link to this heading"></a></h2>
 <p>The high-level process for bringing up your board is as follows:</p>
 <ol class="arabic simple">
 <li><p>Compile and upload the <em>Saturn-V</em> bootloader, which allows Debug
@@ -304,7 +304,7 @@ to validate that your board is working.</p></li>
 </ol>
 </section>
 <section id="build-upload-saturn-v">
-<h2>Build/upload Saturn-V<a class="headerlink" href="#build-upload-saturn-v" title="Permalink to this heading"></a></h2>
+<h2>Build/upload Saturn-V<a class="headerlink" href="#build-upload-saturn-v" title="Link to this heading"></a></h2>
 <p>The “recovery mode (RVM)” bootloader for LUNA boards is named
 <em>Saturn-V</em>; as it’s the first stage in “getting to LUNA”. The bootloader
 is located in <a class="reference external" href="https://github.com/greatscottgadgets/saturn-v">in its own repository</a>.</p>

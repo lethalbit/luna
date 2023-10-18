@@ -14,16 +14,16 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=4b1cca27"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/platformpicker.js"></script>
         <script src="../_static/wavedrom.skin.js"></script>
         <script src="../_static/wavedrom.min.js"></script>
-        <script src="../_static/js/wavedrom.min.js"></script>
-        <script src="../_static/js/wavedrom.skin.js"></script>
+        <script src="../_static/js/wavedrom.min.js?v=db79c4d1"></script>
+        <script src="../_static/js/wavedrom.skin.js?v=986d6b75"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -43,7 +43,7 @@
             SOL
           </a>
               <div class="version">
-                latest
+                0.1.dev1+gc5ec462
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -269,11 +269,11 @@
            <div itemprop="articleBody">
              
   <section id="sol-on-your-own-hardware">
-<h1>SOL On Your Own Hardware<a class="headerlink" href="#sol-on-your-own-hardware" title="Permalink to this heading"></a></h1>
+<h1>SOL On Your Own Hardware<a class="headerlink" href="#sol-on-your-own-hardware" title="Link to this heading"></a></h1>
 <p>The SOL stack is designed to be easy to use on your own FPGA hardware – if you can already run Torii designs on your board, all you’ll need is to set up some I/O definitions and some clock domains.</p>
 <p>The exact platform requirements depend on how you’ll perform USB interfacing, and are detailed below.</p>
 <section id="high-speed-via-a-ulpi-phy">
-<h2>High-Speed via a ULPI PHY<a class="headerlink" href="#high-speed-via-a-ulpi-phy" title="Permalink to this heading"></a></h2>
+<h2>High-Speed via a ULPI PHY<a class="headerlink" href="#high-speed-via-a-ulpi-phy" title="Link to this heading"></a></h2>
 <p>Using a ULPI PHY is relatively straightforward; and typically requires no hardware beyond the ULPI PHY. SOL works with
 both designs that receive their <code class="docutils literal notranslate"><span class="pre">usb</span></code>-domain clocks from the PHY (typical) and designs that provide a 60MHz clock to
 their PHY.</p>
@@ -363,7 +363,7 @@ if the PHY requires an active-low reset, this can be inverted with <code class="
 </div>
 </section>
 <section id="full-speed-using-fpga-i-o">
-<h2>Full-Speed using FPGA I/O<a class="headerlink" href="#full-speed-using-fpga-i-o" title="Permalink to this heading"></a></h2>
+<h2>Full-Speed using FPGA I/O<a class="headerlink" href="#full-speed-using-fpga-i-o" title="Link to this heading"></a></h2>
 <p>SOL provides a <em>gateware PHY</em> that enables an FPGA to communicate at Full Speed using only FPGA 3V3 I/O
 and a pull-up resistor. The FPGA must be able to provide stable 48 MHz and 12 MHz clocks.</p>
 <p>The following clock domains are required:</p>

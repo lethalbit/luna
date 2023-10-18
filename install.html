@@ -14,16 +14,16 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="_static/jquery.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=4b1cca27"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="_static/platformpicker.js"></script>
         <script src="_static/wavedrom.skin.js"></script>
         <script src="_static/wavedrom.min.js"></script>
-        <script src="_static/js/wavedrom.min.js"></script>
-        <script src="_static/js/wavedrom.skin.js"></script>
+        <script src="_static/js/wavedrom.min.js?v=db79c4d1"></script>
+        <script src="_static/js/wavedrom.skin.js?v=986d6b75"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -43,7 +43,7 @@
             SOL
           </a>
               <div class="version">
-                latest
+                0.1.dev1+gc5ec462
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -268,7 +268,7 @@
            <div itemprop="articleBody">
              
   <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The following instructions are a work-in-progress and may not be entirely up to date.</p>
@@ -276,10 +276,10 @@
 <p>SOL requires Python &gt;= 3.9, and <a class="reference external" href="https://github.com/YosysHQ/yosys">Yosys</a> &gt;= 0.20. Torii has been tested with <a class="reference external" href="https://www.python.org/">CPython</a>, but might possibly run under <a class="reference external" href="https://www.pypy.org/">PyPy</a>.</p>
 <p>SOL is built off of the <a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/torii-hdl">Torii</a> Hardware Definition Language, as such that is also required.</p>
 <section id="installing-prerequisites">
-<h2>Installing Prerequisites<a class="headerlink" href="#installing-prerequisites" title="Permalink to this heading"></a></h2>
+<h2>Installing Prerequisites<a class="headerlink" href="#installing-prerequisites" title="Link to this heading"></a></h2>
 <p>Prior to installing SOL, you must install all of its prerequisites and requirements.</p>
 <section id="installing-python">
-<h3>Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this heading"></a></h3>
+<h3>Installing Python<a class="headerlink" href="#installing-python" title="Link to this heading"></a></h3>
 <p>First off, install <code class="docutils literal notranslate"><span class="pre">python</span></code> and <code class="docutils literal notranslate"><span class="pre">pip</span></code> onto your system if the’re not there already.</p>
 <div class="platform-picker docutils container">
 <div class="platform-choice platform--arch platform-noaltname docutils container">
@@ -322,7 +322,7 @@
 </div>
 </section>
 <section id="installing-yosys">
-<h3>Installing Yosys<a class="headerlink" href="#installing-yosys" title="Permalink to this heading"></a></h3>
+<h3>Installing Yosys<a class="headerlink" href="#installing-yosys" title="Link to this heading"></a></h3>
 <div class="platform-picker docutils container">
 <div class="platform-choice platform--arch platform-noaltname docutils container">
 <p class="platform-title">Arch Linux</p>
@@ -376,7 +376,7 @@
 </div>
 </section>
 <section id="installing-torii">
-<h3>Installing Torii<a class="headerlink" href="#installing-torii" title="Permalink to this heading"></a></h3>
+<h3>Installing Torii<a class="headerlink" href="#installing-torii" title="Link to this heading"></a></h3>
 <p>Next, install the latest stable version of <a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/torii-hdl">Torii</a> from <a class="reference external" href="https://pypi.org/project/torii">PyPi</a>.</p>
 <div class="platform-picker docutils container">
 <div class="platform-choice platform--linux platform-noaltname docutils container">
@@ -401,10 +401,10 @@
 </section>
 </section>
 <section id="installing-sol">
-<h2>Installing SOL<a class="headerlink" href="#installing-sol" title="Permalink to this heading"></a></h2>
+<h2>Installing SOL<a class="headerlink" href="#installing-sol" title="Link to this heading"></a></h2>
 <p>The <a class="reference internal" href="#latest-release"><span class="std std-ref">latest release</span></a> of SOL is recommended for any new projects planning to use SOL. It provides the most up-to-date stable version of the API. However, if needed, you can also install a <a class="reference internal" href="#development-snapshot"><span class="std std-ref">development snapshot</span></a> to get access to the bleeding-edge, however the API may be unstable.</p>
 <section id="latest-release">
-<h3>Latest release<a class="headerlink" href="#latest-release" title="Permalink to this heading"></a></h3>
+<h3>Latest release<a class="headerlink" href="#latest-release" title="Link to this heading"></a></h3>
 <div class="platform-picker docutils container">
 <div class="platform-choice platform--linux platform-noaltname docutils container">
 <p class="platform-title">Linux</p>
@@ -427,7 +427,7 @@
 </div>
 </section>
 <section id="development-snapshot">
-<h3>Development snapshot<a class="headerlink" href="#development-snapshot" title="Permalink to this heading"></a></h3>
+<h3>Development snapshot<a class="headerlink" href="#development-snapshot" title="Link to this heading"></a></h3>
 <div class="platform-picker docutils container">
 <div class="platform-choice platform--linux platform-noaltname docutils container">
 <p class="platform-title">Linux</p>
@@ -450,7 +450,7 @@
 </div>
 </section>
 <section id="editable-development-snapshot">
-<h3>Editable development snapshot<a class="headerlink" href="#editable-development-snapshot" title="Permalink to this heading"></a></h3>
+<h3>Editable development snapshot<a class="headerlink" href="#editable-development-snapshot" title="Link to this heading"></a></h3>
 <div class="platform-picker docutils container">
 <div class="platform-choice platform--linux platform-noaltname docutils container">
 <p class="platform-title">Linux</p>

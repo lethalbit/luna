@@ -14,16 +14,16 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=4b1cca27"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../../../_static/platformpicker.js"></script>
         <script src="../../../_static/wavedrom.skin.js"></script>
         <script src="../../../_static/wavedrom.min.js"></script>
-        <script src="../../../_static/js/wavedrom.min.js"></script>
-        <script src="../../../_static/js/wavedrom.skin.js"></script>
+        <script src="../../../_static/js/wavedrom.min.js?v=db79c4d1"></script>
+        <script src="../../../_static/js/wavedrom.skin.js?v=986d6b75"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -43,7 +43,7 @@
             SOL
           </a>
               <div class="version">
-                latest
+                0.1.dev1+gc5ec462
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -271,20 +271,20 @@
            <div itemprop="articleBody">
              
   <section id="module-sol_usb.gateware.interface.gateware_phy.receiver">
-<span id="gateware-phy-receiver"></span><h1>Gateware PHY - Receiver<a class="headerlink" href="#module-sol_usb.gateware.interface.gateware_phy.receiver" title="Permalink to this heading"></a></h1>
+<span id="gateware-phy-receiver"></span><h1>Gateware PHY - Receiver<a class="headerlink" href="#module-sol_usb.gateware.interface.gateware_phy.receiver" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.interface.gateware_phy.receiver.RxClockDataRecovery">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.receiver.</span></span><span class="sig-name descname"><span class="pre">RxClockDataRecovery</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.receiver.RxClockDataRecovery" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.receiver.</span></span><span class="sig-name descname"><span class="pre">RxClockDataRecovery</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.receiver.RxClockDataRecovery" title="Link to this definition"></a></dt>
 <dd><p>RX Clock Data Recovery module.</p>
 <p>RxClockDataRecovery synchronizes the USB differential pair with the FPGAs
 clocks, de-glitches the differential pair, and recovers the incoming clock
 and data.</p>
 <section id="clock-domain">
-<h2>Clock Domain<a class="headerlink" href="#clock-domain" title="Permalink to this heading"></a></h2>
+<h2>Clock Domain<a class="headerlink" href="#clock-domain" title="Link to this heading"></a></h2>
 <p>usb_48 : 48MHz</p>
 </section>
 <section id="input-ports">
-<h2>Input Ports<a class="headerlink" href="#input-ports" title="Permalink to this heading"></a></h2>
+<h2>Input Ports<a class="headerlink" href="#input-ports" title="Link to this heading"></a></h2>
 <p>Input ports are passed in via the constructor.</p>
 <dl class="simple">
 <dt>usbp_raw<span class="classifier">Signal(1)</span></dt><dd><p>Raw USB+ input from the FPGA IOs, no need to synchronize.</p>
@@ -294,7 +294,7 @@ and data.</p>
 </dl>
 </section>
 <section id="output-ports">
-<h2>Output Ports<a class="headerlink" href="#output-ports" title="Permalink to this heading"></a></h2>
+<h2>Output Ports<a class="headerlink" href="#output-ports" title="Link to this heading"></a></h2>
 <p>Output ports are data members of the module. All output ports are flopped.
 The line_state_dj/dk/se0/se1 outputs are 1-hot encoded.</p>
 <dl class="simple">
@@ -318,7 +318,7 @@ Qualify with line_state_valid.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.interface.gateware_phy.receiver.RxNRZIDecoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.receiver.</span></span><span class="sig-name descname"><span class="pre">RxNRZIDecoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.receiver.RxNRZIDecoder" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.receiver.</span></span><span class="sig-name descname"><span class="pre">RxNRZIDecoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.receiver.RxNRZIDecoder" title="Link to this definition"></a></dt>
 <dd><p>RX NRZI decoder.</p>
 <p>In order to ensure there are enough bit transitions for a receiver to recover
 the clock usb uses NRZI encoding.  This module processes the incoming
@@ -327,11 +327,11 @@ also pipelines the se0 signal and passes it through unmodified.</p>
 <p><a class="reference external" href="https://www.pjrc.com/teensy/beta/usb20.pdf">https://www.pjrc.com/teensy/beta/usb20.pdf</a>, USB2 Spec, 7.1.8
 <a class="reference external" href="https://en.wikipedia.org/wiki/Non-return-to-zero">https://en.wikipedia.org/wiki/Non-return-to-zero</a></p>
 <section id="id1">
-<h2>Clock Domain<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<h2>Clock Domain<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>usb_48 : 48MHz</p>
 </section>
 <section id="id2">
-<h2>Input Ports<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<h2>Input Ports<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>Input ports are passed in via the constructor.</p>
 <dl class="simple">
 <dt>i_valid<span class="classifier">Signal(1)</span></dt><dd><p>Qualifier for all of the input signals.  Indicates one bit of valid
@@ -349,7 +349,7 @@ Qualified by valid.</p>
 </dl>
 </section>
 <section id="id3">
-<h2>Output Ports<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<h2>Output Ports<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>Output ports are data members of the module. All output ports are flopped.</p>
 <dl class="simple">
 <dt>o_valid<span class="classifier">Signal(1)</span></dt><dd><p>Qualifier for all of the output signals. Indicates one bit of valid
@@ -367,7 +367,7 @@ Qualified by valid.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.interface.gateware_phy.receiver.RxPacketDetect">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.receiver.</span></span><span class="sig-name descname"><span class="pre">RxPacketDetect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.receiver.RxPacketDetect" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.receiver.</span></span><span class="sig-name descname"><span class="pre">RxPacketDetect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.receiver.RxPacketDetect" title="Link to this definition"></a></dt>
 <dd><p>Packet Detection</p>
 <p>Full Speed packets begin with the following sequence:</p>
 <blockquote>
@@ -390,7 +390,7 @@ detect the end of the packet.</p>
 <p>Packet detection can occur in parallel with bitstuff removal.</p>
 <p><a class="reference external" href="https://www.pjrc.com/teensy/beta/usb20.pdf">https://www.pjrc.com/teensy/beta/usb20.pdf</a>, USB2 Spec, 7.1.10</p>
 <section id="id4">
-<h2>Input Ports<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<h2>Input Ports<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>i_valid<span class="classifier">Signal(1)</span></dt><dd><p>Qualifier for all of the input signals.  Indicates one bit of valid
 data is present on the inputs.</p>
@@ -404,7 +404,7 @@ Qualified by valid.</p>
 </dl>
 </section>
 <section id="id5">
-<h2>Output Ports<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<h2>Output Ports<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>o_pkt_start<span class="classifier">Signal(1)</span></dt><dd><p>Asserted for one clock on the last bit of the sync.</p>
 </dd>
@@ -418,7 +418,7 @@ Qualified by valid.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.interface.gateware_phy.receiver.RxBitstuffRemover">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.receiver.</span></span><span class="sig-name descname"><span class="pre">RxBitstuffRemover</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.receiver.RxBitstuffRemover" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.receiver.</span></span><span class="sig-name descname"><span class="pre">RxBitstuffRemover</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.receiver.RxBitstuffRemover" title="Link to this definition"></a></dt>
 <dd><p>RX Bitstuff Removal</p>
 <p>Long sequences of 1’s would cause the receiver to lose it’s lock on the
 transmitter’s clock.  USB solves this with bitstuffing.  A ‘0’ is stuffed
@@ -427,11 +427,11 @@ clock, but it should not be passed on to higher layers in the device.</p>
 <p><a class="reference external" href="https://www.pjrc.com/teensy/beta/usb20.pdf">https://www.pjrc.com/teensy/beta/usb20.pdf</a>, USB2 Spec, 7.1.9
 <a class="reference external" href="https://en.wikipedia.org/wiki/Bit_stuffing">https://en.wikipedia.org/wiki/Bit_stuffing</a></p>
 <section id="id6">
-<h2>Clock Domain<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
+<h2>Clock Domain<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>usb_48 : 48MHz</p>
 </section>
 <section id="id7">
-<h2>Input Ports<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
+<h2>Input Ports<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>i_valid<span class="classifier">Signal(1)</span></dt><dd><p>Qualifier for all of the input signals.  Indicates one bit of valid
 data is present on the inputs.</p>
@@ -442,7 +442,7 @@ Qualified by valid.</p>
 </dl>
 </section>
 <section id="id8">
-<h2>Output Ports<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
+<h2>Output Ports<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>o_data<span class="classifier">Signal(1)</span></dt><dd><p>Decoded data bit from USB bus.</p>
 </dd>
@@ -460,13 +460,13 @@ Qualified by valid.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.interface.gateware_phy.receiver.RxShifter">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.receiver.</span></span><span class="sig-name descname"><span class="pre">RxShifter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.receiver.RxShifter" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.gateware_phy.receiver.</span></span><span class="sig-name descname"><span class="pre">RxShifter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.gateware_phy.receiver.RxShifter" title="Link to this definition"></a></dt>
 <dd><p>RX Shifter</p>
 <p>A shifter is responsible for shifting in serial bits and presenting them
 as parallel data.  The shifter knows how many bits to shift and has
 controls for resetting the shifter.</p>
 <section id="id9">
-<h2>Clock Domain<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
+<h2>Clock Domain<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <p>usb    : 12MHz</p>
 <dl class="field-list simple">
 <dt class="field-odd">param Parameters are passed in via the constructor.<span class="colon">:</span></dt>

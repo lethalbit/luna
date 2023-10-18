@@ -14,16 +14,16 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=4b1cca27"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../../_static/platformpicker.js"></script>
         <script src="../../_static/wavedrom.skin.js"></script>
         <script src="../../_static/wavedrom.min.js"></script>
-        <script src="../../_static/js/wavedrom.min.js"></script>
-        <script src="../../_static/js/wavedrom.skin.js"></script>
+        <script src="../../_static/js/wavedrom.min.js?v=db79c4d1"></script>
+        <script src="../../_static/js/wavedrom.skin.js?v=986d6b75"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -43,7 +43,7 @@
             SOL
           </a>
               <div class="version">
-                latest
+                0.1.dev1+gc5ec462
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -270,11 +270,11 @@
            <div itemprop="articleBody">
              
   <section id="module-sol_usb.gateware.usb.stream">
-<span id="stream"></span><h1>Stream<a class="headerlink" href="#module-sol_usb.gateware.usb.stream" title="Permalink to this heading"></a></h1>
+<span id="stream"></span><h1>Stream<a class="headerlink" href="#module-sol_usb.gateware.usb.stream" title="Link to this heading"></a></h1>
 <p>Core stream definitions.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBInStreamInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBInStreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBInStreamInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBInStreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBInStreamInterface" title="Link to this definition"></a></dt>
 <dd><p>Variant of SOL’s StreamInterface optimized for USB IN transmission.</p>
 <p>This stream interface is nearly identical to StreamInterface, with the following
 restriction: the <cite>valid</cite> signal _must_ be held high for every packet between <cite>first</cite>
@@ -290,7 +290,7 @@ ready   | tx_ready</p>
 </div></blockquote>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBInStreamInterface.bridge_to">
-<span class="sig-name descname"><span class="pre">bridge_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utmi_tx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBInStreamInterface.bridge_to" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">bridge_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utmi_tx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBInStreamInterface.bridge_to" title="Link to this definition"></a></dt>
 <dd><p>Generates a list of connections that connect this stream to the provided UTMITransmitInterface.</p>
 </dd></dl>
 
@@ -298,7 +298,7 @@ ready   | tx_ready</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBOutStreamInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBOutStreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBOutStreamInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBOutStreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBOutStreamInterface" title="Link to this definition"></a></dt>
 <dd><p>Variant of SOL’s StreamInterface optimized for USB OUT receipt.</p>
 <p>This is a heavily simplified version of our StreamInterface, which omits the ‘first’,
 ‘last’, and ‘ready’ signals. Instead, the streamer indicates when data is valid using
@@ -314,13 +314,13 @@ rx_valid  | next</p>
 </div></blockquote>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBOutStreamInterface.bridge_to">
-<span class="sig-name descname"><span class="pre">bridge_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utmi_rx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBOutStreamInterface.bridge_to" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">bridge_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utmi_rx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBOutStreamInterface.bridge_to" title="Link to this definition"></a></dt>
 <dd><p>Generates a list of connections that connect this stream to the provided UTMIReceiveInterface.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBOutStreamInterface.stream_eq">
-<span class="sig-name descname"><span class="pre">stream_eq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBOutStreamInterface.stream_eq" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">stream_eq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBOutStreamInterface.stream_eq" title="Link to this definition"></a></dt>
 <dd><p>Generates a list of connections that connect this stream to the provided UTMIReceiveInterface.</p>
 </dd></dl>
 
@@ -328,7 +328,7 @@ rx_valid  | next</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBOutStreamBoundaryDetector">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBOutStreamBoundaryDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBOutStreamBoundaryDetector" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBOutStreamBoundaryDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBOutStreamBoundaryDetector" title="Link to this definition"></a></dt>
 <dd><p>Gateware that detects USBOutStream packet boundaries, and generates First and Last signals.</p>
 <p>As UTMI/ULPI do not denote the last byte of a packet; this module injects two bytes of delay in
 order to correctly identify the last bytes.</p>
@@ -359,14 +359,14 @@ timed so it is strobed after :attr:<code class="docutils literal notranslate"><s
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>domain</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The name of the domain the stream belongs to; defaults to ‘usb’.</p>
+<dd class="field-odd"><p><strong>domain</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a>) – The name of the domain the stream belongs to; defaults to ‘usb’.</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBRawSuperSpeedStream">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBRawSuperSpeedStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBRawSuperSpeedStream" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">USBRawSuperSpeedStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBRawSuperSpeedStream" title="Link to this definition"></a></dt>
 <dd><p>Variant of SOL’s StreamInterface optimized for carrying raw USB3 data.</p>
 <p>Low-level USB3 data-streams consist of both data bytes (‘data’) and control flags,
 which differentiate standard data bytes from data bytes used for control.</p>
@@ -374,12 +374,12 @@ which differentiate standard data bytes from data bytes used for control.</p>
 gearing that makes USB3’s high-speed signals manageable.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>payload_words</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The number of payload words (1 byte data, 1 bit control) to include in the current stream.</p>
+<dd class="field-odd"><p><strong>payload_words</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The number of payload words (1 byte data, 1 bit control) to include in the current stream.</p>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.USBRawSuperSpeedStream.stream_eq">
-<span class="sig-name descname"><span class="pre">stream_eq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endian_swap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBRawSuperSpeedStream.stream_eq" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">stream_eq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endian_swap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.USBRawSuperSpeedStream.stream_eq" title="Link to this definition"></a></dt>
 <dd><p>Extend the global <code class="docutils literal notranslate"><span class="pre">stream_eq</span></code> operator to swap endianness.</p>
 </dd></dl>
 
@@ -387,13 +387,13 @@ gearing that makes USB3’s high-speed signals manageable.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.SuperSpeedStreamArbiter">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedStreamArbiter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.SuperSpeedStreamArbiter" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedStreamArbiter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.stream.SuperSpeedStreamArbiter" title="Link to this definition"></a></dt>
 <dd><p>Convenience variant of our StreamArbiter that operates SuperSpeed streams in the <code class="docutils literal notranslate"><span class="pre">ss</span></code> domain.</p>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.stream.SuperSpeedStreamInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedStreamInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.stream.</span></span><span class="sig-name descname"><span class="pre">SuperSpeedStreamInterface</span></span><a class="headerlink" href="#sol_usb.gateware.usb.stream.SuperSpeedStreamInterface" title="Link to this definition"></a></dt>
 <dd><p>Convenience variant of our StreamInterface sized to work with SuperSpeed streams.</p>
 </dd></dl>
 

@@ -14,16 +14,16 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=4b1cca27"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../../_static/platformpicker.js"></script>
         <script src="../../_static/wavedrom.skin.js"></script>
         <script src="../../_static/wavedrom.min.js"></script>
-        <script src="../../_static/js/wavedrom.min.js"></script>
-        <script src="../../_static/js/wavedrom.skin.js"></script>
+        <script src="../../_static/js/wavedrom.min.js?v=db79c4d1"></script>
+        <script src="../../_static/js/wavedrom.skin.js?v=986d6b75"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -43,7 +43,7 @@
             SOL
           </a>
               <div class="version">
-                latest
+                0.1.dev1+gc5ec462
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -269,11 +269,11 @@
            <div itemprop="articleBody">
              
   <section id="module-sol_usb.gateware.stream">
-<span id="stream"></span><h1>Stream<a class="headerlink" href="#module-sol_usb.gateware.stream" title="Permalink to this heading"></a></h1>
+<span id="stream"></span><h1>Stream<a class="headerlink" href="#module-sol_usb.gateware.stream" title="Link to this heading"></a></h1>
 <p>Core stream definitions.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.stream.StreamInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.stream.</span></span><span class="sig-name descname"><span class="pre">StreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.StreamInterface" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.stream.</span></span><span class="sig-name descname"><span class="pre">StreamInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.StreamInterface" title="Link to this definition"></a></dt>
 <dd><p>Simple record implementing a unidirectional data stream.</p>
 <p>This class is similar to LiteX’s streams; but instances may be optimized for
 interaction with USB PHYs. Accordingly, some uses may add restrictions; this
@@ -291,22 +291,22 @@ clock edge. Can be de-asserted to put backpressure on the transmitter.</p></li>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>payload_width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The width of the stream’s payload, in bits.</p></li>
-<li><p><strong>extra_fields</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em> of </em><em>tuples</em><em>, </em><em>optional</em>) – A flat (non-nested) list of tuples indicating any extra fields present.
+<li><p><strong>payload_width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The width of the stream’s payload, in bits.</p></li>
+<li><p><strong>extra_fields</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em> of </em><em>tuples</em><em>, </em><em>optional</em>) – A flat (non-nested) list of tuples indicating any extra fields present.
 Similar to a record’s layout field; but cannot be nested.</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.stream.StreamInterface.stream_eq">
-<span class="sig-name descname"><span class="pre">stream_eq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.StreamInterface.stream_eq" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">stream_eq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.StreamInterface.stream_eq" title="Link to this definition"></a></dt>
 <dd><p>A hopefully more clear version of.connect() that more clearly indicates data_flow direction.</p>
 <p>This will either solve a common footgun or introduce a new one. We’ll see and adapt accordingly.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.stream.StreamInterface.tap">
-<span class="sig-name descname"><span class="pre">tap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tap_ready</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.StreamInterface.tap" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">tap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tap_ready</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.StreamInterface.tap" title="Link to this definition"></a></dt>
 <dd><p>Simple extension to stream_eq() that captures a read-only view of the stream.</p>
 <p>This connects all signals from <code class="docutils literal notranslate"><span class="pre">interface</span></code> to their equivalents in this stream.</p>
 </dd></dl>
@@ -314,11 +314,11 @@ Similar to a record’s layout field; but cannot be nested.</p></li>
 </dd></dl>
 
 <section id="module-sol_usb.gateware.stream.arbiter">
-<span id="arbiter"></span><h2>Arbiter<a class="headerlink" href="#module-sol_usb.gateware.stream.arbiter" title="Permalink to this heading"></a></h2>
+<span id="arbiter"></span><h2>Arbiter<a class="headerlink" href="#module-sol_usb.gateware.stream.arbiter" title="Link to this heading"></a></h2>
 <p>Stream multiplexers/arbiters.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.stream.arbiter.StreamMultiplexer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.stream.arbiter.</span></span><span class="sig-name descname"><span class="pre">StreamMultiplexer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.arbiter.StreamMultiplexer" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.stream.arbiter.</span></span><span class="sig-name descname"><span class="pre">StreamMultiplexer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.arbiter.StreamMultiplexer" title="Link to this definition"></a></dt>
 <dd><p>Gateware that merges a collection of StreamInterfaces into a single interface.</p>
 <p>This variant performs no scheduling. Assumes that only one stream will be communicating at once.</p>
 <dl class="field-list simple">
@@ -328,7 +328,7 @@ Similar to a record’s layout field; but cannot be nested.</p></li>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.stream.arbiter.StreamMultiplexer.add_input">
-<span class="sig-name descname"><span class="pre">add_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_interface</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.arbiter.StreamMultiplexer.add_input" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_interface</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.arbiter.StreamMultiplexer.add_input" title="Link to this definition"></a></dt>
 <dd><p>Adds a transmit interface to the multiplexer.</p>
 </dd></dl>
 
@@ -336,7 +336,7 @@ Similar to a record’s layout field; but cannot be nested.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.stream.arbiter.StreamArbiter">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.stream.arbiter.</span></span><span class="sig-name descname"><span class="pre">StreamArbiter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.arbiter.StreamArbiter" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.stream.arbiter.</span></span><span class="sig-name descname"><span class="pre">StreamArbiter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.arbiter.StreamArbiter" title="Link to this definition"></a></dt>
 <dd><p>Gateware that merges a collection of StreamInterfaces into a single interface.</p>
 <p>This variant uses a simple priority scheduler; and will use a standard valid/ready handshake
 to schedule a single stream to communicate at a time. Bursts of <code class="docutils literal notranslate"><span class="pre">valid</span></code> will never be interrupted,
@@ -351,13 +351,13 @@ so streams will only be switched once the current transmitter drops <code class=
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>stream_type</strong> (<em>subclass</em><em> of </em><a class="reference internal" href="#sol_usb.gateware.stream.StreamInterface" title="sol_usb.gateware.stream.StreamInterface"><em>StreamInterface</em></a>) – If provided, sets the type of stream we’ll be multiplexing (and thus our output type).</p></li>
-<li><p><strong>domain</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The name of the domain in which this arbiter should operate. Defaults to ‘      sync’   .</p></li>
+<li><p><strong>domain</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a>) – The name of the domain in which this arbiter should operate. Defaults to ‘      sync’   .</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="sol_usb.gateware.stream.arbiter.StreamArbiter.add_stream">
-<span class="sig-name descname"><span class="pre">add_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stream</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.arbiter.StreamArbiter.add_stream" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stream</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.arbiter.StreamArbiter.add_stream" title="Link to this definition"></a></dt>
 <dd><p>Adds a stream to our arbiter.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -370,18 +370,18 @@ so streams will only be switched once the current transmitter drops <code class=
 
 </section>
 <section id="module-sol_usb.gateware.stream.generator">
-<span id="generator"></span><h2>Generator<a class="headerlink" href="#module-sol_usb.gateware.stream.generator" title="Permalink to this heading"></a></h2>
+<span id="generator"></span><h2>Generator<a class="headerlink" href="#module-sol_usb.gateware.stream.generator" title="Link to this heading"></a></h2>
 <p>Stream generators.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.stream.generator.ConstantStreamGenerator">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.stream.generator.</span></span><span class="sig-name descname"><span class="pre">ConstantStreamGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.generator.ConstantStreamGenerator" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.stream.generator.</span></span><span class="sig-name descname"><span class="pre">ConstantStreamGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.generator.ConstantStreamGenerator" title="Link to this definition"></a></dt>
 <dd><p>Gateware that generates stream of constant data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>start</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Strobe that indicates when the stream should be started.</p></li>
 <li><p><strong>done</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>output</em>) – Strobe that pulses high when we’re finishing a transmission.</p></li>
-<li><p><strong>start_position</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.11)"><em>range</em></a><em>(</em><em>len</em><em>(</em><em>data</em><em>)</em><em>)</em><em>, </em><em>input</em>) – Specifies the starting position in the constant stream; applied when start() is pulsed.</p></li>
+<li><p><strong>start_position</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.12)"><em>range</em></a><em>(</em><em>len</em><em>(</em><em>data</em><em>)</em><em>)</em><em>, </em><em>input</em>) – Specifies the starting position in the constant stream; applied when start() is pulsed.</p></li>
 <li><p><strong>max_length</strong> (<em>Signal</em><em>(</em><em>max_length_width</em><em>)</em><em>, </em><em>input</em>) – The maximum length to be sent -in bytes-. Defaults to the length of the stream.
 Only present if the <cite>max_length_width</cite> parameter is provided on creation.</p></li>
 <li><p><strong>output_length</strong> (<em>Signal</em><em>(</em><em>max_length_width</em><em>)</em><em>, </em><em>output</em>) – Indicates the actual data length for the stream currently being output.
@@ -392,12 +392,12 @@ Only present if the <cite>max_length_width</cite> parameter is provided on creat
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>constant_data</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.11)"><em>bytes</em></a><em>, or </em><em>equivalent</em>) – The constant data for the stream to be generated.
+<li><p><strong>constant_data</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><em>bytes</em></a><em>, or </em><em>equivalent</em>) – The constant data for the stream to be generated.
 Should be an iterable of integers; or, if data_width is divisible by 8, a bytes-like object.</p></li>
 <li><p><strong>domain</strong> (<em>string</em>) – The clock domain this generator should belong to. Defaults to ‘sync’.</p></li>
 <li><p><strong>stream_type</strong> (<a class="reference internal" href="#sol_usb.gateware.stream.StreamInterface" title="sol_usb.gateware.stream.StreamInterface"><em>StreamInterface</em></a><em>, or </em><em>subclass</em>) – The type of stream we’ll be multiplexing.</p></li>
-<li><p><strong>data_width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – The width of the constant payload. If not provided; will be taken from the stream’s payload width.</p></li>
-<li><p><strong>max_length_width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – If provided, a <cite>max_length</cite> signal will be present that can limit the total length transmitted.</p></li>
+<li><p><strong>data_width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em>, </em><em>optional</em>) – The width of the constant payload. If not provided; will be taken from the stream’s payload width.</p></li>
+<li><p><strong>max_length_width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – If provided, a <cite>max_length</cite> signal will be present that can limit the total length transmitted.</p></li>
 <li><p><strong>data_endianness</strong> (<em>little</em>) – If bytes are provided, and our data width is greater</p></li>
 </ul>
 </dd>
@@ -406,7 +406,7 @@ Should be an iterable of integers; or, if data_width is divisible by 8, a bytes-
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.stream.generator.StreamSerializer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.stream.generator.</span></span><span class="sig-name descname"><span class="pre">StreamSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.generator.StreamSerializer" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.stream.generator.</span></span><span class="sig-name descname"><span class="pre">StreamSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.stream.generator.StreamSerializer" title="Link to this definition"></a></dt>
 <dd><p>Gateware that serializes a short Array input onto a stream.</p>
 <dl>
 <dt>I/O port:</dt><dd><p>I: start        – Strobe that indicates when the stream should be started.
