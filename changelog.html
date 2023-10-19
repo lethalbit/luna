@@ -42,7 +42,7 @@
             SOL
           </a>
               <div class="version">
-                0.1.dev1+g5a1f7c5
+                0.1.dev1+g21376c7
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -220,23 +220,23 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="hardware/index.html">Hardware</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#unreleased">Unreleased</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#unreleased">Unreleased</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.3.0</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#added">Added</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#changed">Changed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#deprecated">Deprecated</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#removed">Removed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#security">Security</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">0.2.0</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">Changed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">Removed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">Fixed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">0.2.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Removed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">0.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">0.1.0</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/sol/">Source Code</a></li>
@@ -283,12 +283,32 @@ Unreleased template stuff
 ### Security
 -->
 <section id="unreleased">
-<h2><a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/sol/compare/v0.2.0...main">Unreleased</a><a class="headerlink" href="#unreleased" title="Link to this heading"></a></h2>
+<h2><a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/sol/compare/v0.3.0...main">Unreleased</a><a class="headerlink" href="#unreleased" title="Link to this heading"></a></h2>
+</section>
+<section id="id1">
+<h2><a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/sol/compare/v0.2.0...v0.3.0">0.3.0</a><a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <section id="added">
 <h3>Added<a class="headerlink" href="#added" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">handler_condition</span></code> to USB Requests</p></li>
+<li><p>Added automatic construction of <code class="docutils literal notranslate"><span class="pre">StallOnlyRequestHandler</span></code></p></li>
+<li><p>Added pcapng support for capture applet</p></li>
+<li><p>Added a <code class="docutils literal notranslate"><span class="pre">CONTRIBUTING.md</span></code> file</p></li>
+<li><p>Added support for dynamic capture speed selection in analyzer</p></li>
+<li><p>Added ability to request supported speeds from analyzer</p></li>
+<li><p>Added ability to discard invalid/unknown data in the analyzer and restart the capture</p></li>
+<li><p>Added an <code class="docutils literal notranslate"><span class="pre">rx_invalid</span></code> signal for <code class="docutils literal notranslate"><span class="pre">RequestHandlerInterface</span></code> to indicate invalid reception</p></li>
+</ul>
 </section>
 <section id="changed">
 <h3>Changed<a class="headerlink" href="#changed" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Updated from rich <code class="docutils literal notranslate"><span class="pre">12.6.0</span></code> to <code class="docutils literal notranslate"><span class="pre">13.0.0</span></code></p></li>
+<li><p>Improved Analyzer speed</p></li>
+<li><p>Updated <code class="docutils literal notranslate"><span class="pre">SimpleSoC</span></code> to bring it up to date with <code class="docutils literal notranslate"><span class="pre">torii.soc</span></code> and <code class="docutils literal notranslate"><span class="pre">lambdasoc</span></code></p></li>
+<li><p>Updated torii minimum version to &gt;=0.5.0</p></li>
+<li><p>Moved the speed test device gateware into the applet gateware library</p></li>
+</ul>
 </section>
 <section id="deprecated">
 <h3>Deprecated<a class="headerlink" href="#deprecated" title="Link to this heading"></a></h3>
@@ -298,22 +318,31 @@ Unreleased template stuff
 </section>
 <section id="fixed">
 <h3>Fixed<a class="headerlink" href="#fixed" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Various code formatting cleanups.</p></li>
+<li><p>Fixed Analyzer capture engine overflow problem</p></li>
+<li><p>Fixed UTMI/ULPI typo</p></li>
+<li><p>Fixed Analyzer overflow handling</p></li>
+<li><p>Fixed overflow handling on the primary analyzer FIFO</p></li>
+<li><p>Fixed an issue with the return type of USBPacketID.byte()</p></li>
+<li><p>Fixed signed/unsigned conversion error in USB2 descriptor handling</p></li>
+<li><p>Implemented missing <code class="docutils literal notranslate"><span class="pre">.shape()</span></code> method for <code class="docutils literal notranslate"><span class="pre">ECP5DebugSPIBridge</span></code></p></li>
+<li><p>Fixed using <code class="docutils literal notranslate"><span class="pre">Pin</span></code> objects as if they were raw <code class="docutils literal notranslate"><span class="pre">Signals</span></code></p></li>
+<li><p>Fixed missing <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> in the <code class="docutils literal notranslate"><span class="pre">toolchain_prepare</span></code> method of <code class="docutils literal notranslate"><span class="pre">LUNAApolloPlatform</span></code></p></li>
+</ul>
 </section>
-<section id="security">
-<h3>Security<a class="headerlink" href="#security" title="Link to this heading"></a></h3>
 </section>
-</section>
-<section id="id1">
-<h2><a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/sol/compare/v0.1.0...v0.2.0">0.2.0</a><a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <section id="id2">
-<h3>Added<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<h2><a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/sol/compare/v0.1.0...v0.2.0">0.2.0</a><a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<section id="id3">
+<h3>Added<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added preliminary type annotations.</p></li>
 <li><p>Added the <code class="docutils literal notranslate"><span class="pre">CHANGELOG.md</span></code>.</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3>Changed<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<section id="id4">
+<h3>Changed<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Changed the needed dependencies.</p>
 <ul>
@@ -329,23 +358,23 @@ Unreleased template stuff
 <li><p>Replaced old python-usb-protocol with usb-construct.</p></li>
 </ul>
 </section>
-<section id="id4">
-<h3>Removed<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<section id="id5">
+<h3>Removed<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Removed all of the 3rd party platform definitions except for the <code class="docutils literal notranslate"><span class="pre">LUNA</span></code> platforms.</p></li>
 <li><p>Removed the old <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code></p></li>
 </ul>
 </section>
-<section id="id5">
-<h3>Fixed<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<section id="id6">
+<h3>Fixed<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Fixed a large chunk of code style and formatting.</p></li>
 <li><p>Fixed the documentation, it should now be more useful.</p></li>
 </ul>
 </section>
 </section>
-<section id="id6">
-<h2><a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/sol/compare/hw-r0.4...v0.1.0">0.1.0</a><a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<section id="id7">
+<h2><a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/sol/compare/hw-r0.4...v0.1.0">0.1.0</a><a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>No changelog is provided for this version as it is a hold-over / demarcation of the divergence from <a class="reference external" href="https://github.com/greatscottgadgets/luna/">LUNA</a>.</p>
 </section>
 </section>
