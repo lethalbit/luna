@@ -45,7 +45,7 @@
             SOL
           </a>
               <div class="version">
-                0.1.dev1+g21a6792
+                0.1.dev1+gcf4d4c1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -91,6 +91,8 @@
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">ULPI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sol_usb.gateware.interface.ulpi.UPLIDataRecord"><code class="docutils literal notranslate"><span class="pre">UPLIDataRecord</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sol_usb.gateware.interface.ulpi.UPLIDirRecord"><code class="docutils literal notranslate"><span class="pre">UPLIDirRecord</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sol_usb.gateware.interface.ulpi.ULPIInterface"><code class="docutils literal notranslate"><span class="pre">ULPIInterface</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sol_usb.gateware.interface.ulpi.ULPIRegisterWindow"><code class="docutils literal notranslate"><span class="pre">ULPIRegisterWindow</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sol_usb.gateware.interface.ulpi.ULPIRxEventDecoder"><code class="docutils literal notranslate"><span class="pre">ULPIRxEventDecoder</span></code></a></li>
@@ -274,6 +276,16 @@
   <section id="module-sol_usb.gateware.interface.ulpi">
 <span id="ulpi"></span><h1>ULPI<a class="headerlink" href="#module-sol_usb.gateware.interface.ulpi" title="Link to this heading"></a></h1>
 <p>ULPI interfacing hardware.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="sol_usb.gateware.interface.ulpi.UPLIDataRecord">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.ulpi.</span></span><span class="sig-name descname"><span class="pre">UPLIDataRecord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">layout</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.ulpi.UPLIDataRecord" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sol_usb.gateware.interface.ulpi.UPLIDirRecord">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.ulpi.</span></span><span class="sig-name descname"><span class="pre">UPLIDirRecord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">layout</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.interface.ulpi.UPLIDirRecord" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.interface.ulpi.ULPIInterface">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.interface.ulpi.</span></span><span class="sig-name descname"><span class="pre">ULPIInterface</span></span><a class="headerlink" href="#sol_usb.gateware.interface.ulpi.ULPIInterface" title="Link to this definition"></a></dt>
