@@ -19,7 +19,7 @@
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=4b1cca27"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../../_static/platformpicker.js"></script>
         <script src="../../_static/wavedrom.skin.js"></script>
@@ -45,7 +45,7 @@
             SOL
           </a>
               <div class="version">
-                0.1.dev1+g2a9264a
+                0.1.dev1+gdf698f1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -289,8 +289,8 @@ an ‘output’ is driven by the PHY and received by the MAC.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Interface width, in symbols.</p></li>
-<li><p><strong>Ports</strong> – </p></li>
-<li><p><strong>-----</strong> – </p></li>
+<li><p><strong>Ports</strong></p></li>
+<li><p><strong>-----</strong></p></li>
 <li><p><strong>reset</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Active-high, asynchronous reset for the PHY receiver and transmitter.</p></li>
 <li><p><strong>clk</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Reference clock for the PHY receiver and transmitter. The specifications for this clock
 (frequency, jitter, phase relationship to other clocks) are PHY implementation dependent
@@ -300,10 +300,10 @@ to the rising edge of this clock. This clock is derived from the reference clock
 the reference clock is spread spectrum modulated, so will be the interface clock.
 The frequency of this clock depends on the <code class="docutils literal notranslate"><span class="pre">phy_mode</span></code> and <code class="docutils literal notranslate"><span class="pre">rate</span></code> inputs. Note that
 the supported combinations of <code class="docutils literal notranslate"><span class="pre">phy_mode</span></code> and <code class="docutils literal notranslate"><span class="pre">rate</span></code> are PHY implementation dependent.</p></li>
-<li><p><strong>tx_data</strong> (<em>Signal</em><em>(</em><em>width * 8</em><em>)</em><em>, </em><em>input</em>) – </p></li>
+<li><p><strong>tx_data</strong> (<em>Signal</em><em>(</em><em>width * 8</em><em>)</em><em>, </em><em>input</em>)</p></li>
 <li><p><strong>tx_datak</strong> (<em>Signal</em><em>(</em><em>width</em><em>)</em><em>, </em><em>input</em>) – Transmit data bus. Bits [7:0] are the first symbol to be transmitted, bits [15:8] (if any)
 are the second symbol, and so on.</p></li>
-<li><p><strong>rx_data</strong> (<em>Signal</em><em>(</em><em>width * 8</em><em>)</em><em>, </em><em>output</em>) – </p></li>
+<li><p><strong>rx_data</strong> (<em>Signal</em><em>(</em><em>width * 8</em><em>)</em><em>, </em><em>output</em>)</p></li>
 <li><p><strong>rx_datak</strong> (<em>Signal</em><em>(</em><em>width</em><em>)</em><em>, </em><em>output</em>) – Receive data bus. Bits [7:0] are the first symbol that has been received, bits [15:8]
 (if any) are the second symbol, and so on.</p></li>
 <li><p><strong>phy_mode</strong> (<em>Signal</em><em>(</em><em>2</em><em>)</em><em>, </em><em>input</em>) – PHY operating mode; 0 for PCI Express, 1 for SuperSpeed USB. The allowed values for this
@@ -325,7 +325,7 @@ for this input are PHY implementation dependent.</p></li>
 input and their meanings are PHY implementation dependent.</p></li>
 <li><p><strong>tx_swing</strong> (<em>Signal</em><em>(</em><em>1</em><em>)</em>) – Transmitter voltage swing level. The allowed values for this input and their meanings
 are PHY implementation dependent.</p></li>
-<li><p><strong>tx_detrx_lpbk</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – </p></li>
+<li><p><strong>tx_detrx_lpbk</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>)</p></li>
 <li><p><strong>tx_elec_idle</strong> (<em>Signal</em><em>(</em><em>)</em><em>, </em><em>input</em>) – Protocol-specific transmit control signals, as per the PIPE specification. Depending on
 the state of <code class="docutils literal notranslate"><span class="pre">phy_mode</span></code> and <code class="docutils literal notranslate"><span class="pre">power_down</span></code> inputs, these inputs direct the PHY
 transmitter to transmit data from the transmit data bus, loop back received data, go into
