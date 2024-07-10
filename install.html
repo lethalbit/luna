@@ -45,7 +45,7 @@
             SOL
           </a>
               <div class="version">
-                0.1.dev1+g620f27a
+                0.1.dev1+gbaa0073
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -225,8 +225,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="hardware/index.html">Hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#unreleased">Unreleased</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id1">0.3.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#unreleased">Unreleased</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="changelog.html#added">Added</a></li>
 <li class="toctree-l3"><a class="reference internal" href="changelog.html#changed">Changed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="changelog.html#deprecated">Deprecated</a></li>
@@ -234,14 +233,28 @@
 <li class="toctree-l3"><a class="reference internal" href="changelog.html#fixed">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id2">0.2.0</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="changelog.html#id3">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="changelog.html#id4">Changed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="changelog.html#id5">Removed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="changelog.html#id6">Fixed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id1">0.4.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id2">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id3">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id4">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id7">0.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id5">0.3.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id6">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id7">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id8">Deprecated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id9">Removed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id10">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id11">0.2.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id12">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id13">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id14">Removed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html#id15">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id16">0.1.0</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/sol/">Source Code</a></li>
@@ -277,7 +290,7 @@
 <p class="admonition-title">Warning</p>
 <p>The following instructions are a work-in-progress and may not be entirely up to date.</p>
 </div>
-<p>SOL requires Python &gt;= 3.9, and <a class="reference external" href="https://github.com/YosysHQ/yosys">Yosys</a> &gt;= 0.20. Torii has been tested with <a class="reference external" href="https://www.python.org/">CPython</a>, but might possibly run under <a class="reference external" href="https://www.pypy.org/">PyPy</a>.</p>
+<p>SOL requires Python &gt;= 3.10, and <a class="reference external" href="https://github.com/YosysHQ/yosys">Yosys</a> &gt;= 0.30 except for 0.37 due to a Verilog backend bug. SOL has been tested with <a class="reference external" href="https://www.python.org/">CPython</a>, but might possibly run under <a class="reference external" href="https://www.pypy.org/">PyPy</a>.</p>
 <p>SOL is built off of the <a class="reference external" href="https://github.com/shrine-maiden-heavy-industries/torii-hdl">Torii</a> Hardware Definition Language, as such that is also required.</p>
 <section id="installing-prerequisites">
 <h2>Installing Prerequisites<a class="headerlink" href="#installing-prerequisites" title="Link to this heading"></a></h2>
@@ -349,8 +362,8 @@
 </div>
 <p>With other Linux distributions, it is recommended to use the <a class="reference external" href="https://github.com/YosysHQ/oss-cad-suite-build">OSS Cad Suite</a> nightly build. It provides a full environment of all the tools needed built on a nightly basis. This includes Yosys and GTKWave</p>
 <p>Simply download the latest <a class="reference external" href="https://github.com/YosysHQ/oss-cad-suite-build/releases">release</a> for your architecture, extract it to a good home, and then add it to your <code class="docutils literal notranslate"><span class="pre">$PATH</span></code></p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>curl<span class="w"> </span>-LOJ<span class="w"> </span>https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2022-04-26/oss-cad-suite-linux-x64-20220426.tgz
-<span class="gp">$ </span>tar<span class="w"> </span>xfv<span class="w"> </span>oss-cad-suite-linux-x64-20220426.tgz
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>curl<span class="w"> </span>-LOJ<span class="w"> </span>https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2022-04-26/oss-cad-suite-linux-x64-20240710.tgz
+<span class="gp">$ </span>tar<span class="w"> </span>xfv<span class="w"> </span>oss-cad-suite-linux-x64-20240710.tgz
 <span class="gp">$ </span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;`pwd`/oss-cad-suite/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
@@ -359,8 +372,8 @@
 <p class="platform-title">macOS</p>
 <p>For macOS systems, it is recommended to use the YoWASP distribution of the toolchain. However if you want to use the native tools, and you are using an Intel based Mac, then the <a class="reference external" href="https://github.com/YosysHQ/oss-cad-suite-build">OSS Cad Suite</a> has nightly builds for x86_64 versions of Darwin. This includes Yosys and GTKWave</p>
 <p>Simply download the latest <a class="reference external" href="https://github.com/YosysHQ/oss-cad-suite-build/releases">release</a> for your architecture, extract it to a good home, and then add it to your <code class="docutils literal notranslate"><span class="pre">$PATH</span></code></p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>curl<span class="w"> </span>-LOJ<span class="w"> </span>https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2022-04-26/oss-cad-suite-darwin-x64-20220426.tgz
-<span class="gp">$ </span>tar<span class="w"> </span>xfv<span class="w"> </span>oss-cad-suite-darwin-x64-20220426.tgz
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>curl<span class="w"> </span>-LOJ<span class="w"> </span>https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2022-04-26/oss-cad-suite-darwin-x64-20240710.tgz
+<span class="gp">$ </span>tar<span class="w"> </span>xfv<span class="w"> </span>oss-cad-suite-darwin-x64-220240710.tgz
 <span class="gp">$ </span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;`pwd`/oss-cad-suite/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
