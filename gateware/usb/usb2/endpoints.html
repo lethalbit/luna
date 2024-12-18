@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
@@ -12,20 +14,16 @@
 
   
     <link rel="canonical" href="https://sol.shmdn.link/gateware/usb/usb2/endpoints.html" />
-  <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=4b1cca27"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/platformpicker.js"></script>
-        <script src="../../../_static/wavedrom.skin.js"></script>
-        <script src="../../../_static/wavedrom.min.js"></script>
-        <script src="../../../_static/js/wavedrom.min.js?v=db79c4d1"></script>
-        <script src="../../../_static/js/wavedrom.skin.js?v=986d6b75"></script>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=4b1cca27"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/platformpicker.js"></script>
+      <script src="../../../_static/wavedrom.skin.js"></script>
+      <script src="../../../_static/wavedrom.min.js"></script>
+      <script src="../../../_static/js/wavedrom.min.js?v=db79c4d1"></script>
+      <script src="../../../_static/js/wavedrom.skin.js?v=986d6b75"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -44,9 +42,6 @@
           <a href="../../../index.html" class="icon icon-home">
             SOL
           </a>
-              <div class="version">
-                0.1.dev1+gbaa0073
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -91,8 +86,8 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../interface/ulpi.html">ULPI</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.UPLIDataRecord"><code class="docutils literal notranslate"><span class="pre">UPLIDataRecord</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.UPLIDirRecord"><code class="docutils literal notranslate"><span class="pre">UPLIDirRecord</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIDataRecord"><code class="docutils literal notranslate"><span class="pre">ULPIDataRecord</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIDirRecord"><code class="docutils literal notranslate"><span class="pre">ULPIDirRecord</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIInterface"><code class="docutils literal notranslate"><span class="pre">ULPIInterface</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIRegisterWindow"><code class="docutils literal notranslate"><span class="pre">ULPIRegisterWindow</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../interface/ulpi.html#sol_usb.gateware.interface.ulpi.ULPIRxEventDecoder"><code class="docutils literal notranslate"><span class="pre">ULPIRxEventDecoder</span></code></a></li>
@@ -297,7 +292,7 @@
 interfaces to hosts via isochronous pipes.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.endpoints.isochronous.USBIsochronousInEndpoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoints.isochronous.</span></span><span class="sig-name descname"><span class="pre">USBIsochronousInEndpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoints.isochronous.USBIsochronousInEndpoint" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoints.isochronous.</span></span><span class="sig-name descname"><span class="pre">USBIsochronousInEndpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoints.isochronous.USBIsochronousInEndpoint" title="Link to this definition"></a></dt>
 <dd><p>Isochronous endpoint that presents a memory-like interface.</p>
 <p>Used for repeatedly streaming data to a host from a memory or memory-like interface.
 Intended to be useful as a transport for e.g. video or audio data.</p>
@@ -305,7 +300,7 @@ Intended to be useful as a transport for e.g. video or audio data.</p>
 <dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>interface</strong> (<a class="reference internal" href="endpoint.html#sol_usb.gateware.usb.usb2.endpoint.EndpointInterface" title="sol_usb.gateware.usb.usb2.endpoint.EndpointInterface"><em>EndpointInterface</em></a>) – Communications link to our USB core.</p></li>
-<li><p><strong>bytes_in_frame</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.12)"><em>range</em></a><em>(</em><em>0</em><em>, </em><em>3073</em><em>)</em><em>)</em><em>, </em><em>input</em>) – <p>Specifies how many bytes will be transferred during this frame. If this is 0,
+<li><p><strong>bytes_in_frame</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.13)"><em>range</em></a><em>(</em><em>0</em><em>, </em><em>3073</em><em>)</em><em>)</em><em>, </em><em>input</em>) – <p>Specifies how many bytes will be transferred during this frame. If this is 0,
 a single ZLP will be emitted; for any other value one, two, or three packets
 will be generated, depending on the packet size. Latched in at the start of
 each frame.</p>
@@ -320,9 +315,9 @@ maxes out at (N * maxPacketSize), where N is the number of transfers per microfr
 <li><p>For all other configurations, this must be &lt;= the maximum packet size.</p></li>
 </ul>
 </p></li>
-<li><p><strong>address</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.12)"><em>range</em></a><em>(</em><em>0</em><em>,</em><em>3072</em><em>)</em><em>)</em><em>, </em><em>output</em>) – Indicates the address / offset of the byte currently being transmitted.
+<li><p><strong>address</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.13)"><em>range</em></a><em>(</em><em>0</em><em>,</em><em>3072</em><em>)</em><em>)</em><em>, </em><em>output</em>) – Indicates the address / offset of the byte currently being transmitted.
 Can be used to drive the <a href="#id1"><span class="problematic" id="id2">``</span></a>address` lines of an asynchronous memory</p></li>
-<li><p><strong>next_address</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.12)"><em>range</em></a><em>(</em><em>0</em><em>,</em><em>3072</em><em>)</em><em>)</em><em>, </em><em>output</em>) – Indicates the ‘address’ / offset of the byte that should be presented
+<li><p><strong>next_address</strong> (<em>Signal</em><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.13)"><em>range</em></a><em>(</em><em>0</em><em>,</em><em>3072</em><em>)</em><em>)</em><em>, </em><em>output</em>) – Indicates the ‘address’ / offset of the byte that should be presented
 on :attr:<code class="docutils literal notranslate"><span class="pre">value</span></code> at the next <code class="docutils literal notranslate"><span class="pre">usb</span></code>-clock cycle. Can be used to drive
 the <code class="docutils literal notranslate"><span class="pre">address</span></code> lines of a synchronous memory.</p></li>
 <li><p><strong>value</strong> (<em>Signal</em><em>(</em><em>8</em><em>)</em><em>, </em><em>input</em>) – The value to be transmitted, this cycle. Can be directly tied to the read
@@ -331,8 +326,8 @@ port of a memory.</p></li>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>endpoint_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The endpoint number (not address) this endpoint should respond to.</p></li>
-<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The maximum packet size for this endpoint. Should match the wMaxPacketSize provided in the
+<li><p><strong>endpoint_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The endpoint number (not address) this endpoint should respond to.</p></li>
+<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The maximum packet size for this endpoint. Should match the wMaxPacketSize provided in the
 USB endpoint descriptor.</p></li>
 </ul>
 </dd>
@@ -347,7 +342,7 @@ USB endpoint descriptor.</p></li>
 repeatedly poll a device for status.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.endpoints.status.USBSignalInEndpoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoints.status.</span></span><span class="sig-name descname"><span class="pre">USBSignalInEndpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoints.status.USBSignalInEndpoint" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoints.status.</span></span><span class="sig-name descname"><span class="pre">USBSignalInEndpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoints.status.USBSignalInEndpoint" title="Link to this definition"></a></dt>
 <dd><p>Endpoint that transmits the value of a signal to a host whenever polled.</p>
 <p>This is intended to be usable to implement a simple interrupt endpoint that polls for a status signal.</p>
 <dl class="field-list simple">
@@ -361,10 +356,10 @@ host polls our endpoint.</p></li>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The width of the signal we’ll relay up to the host, in bits.</p></li>
-<li><p><strong>endpoint_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The endpoint number (not address) this endpoint should respond to.</p></li>
-<li><p><strong>endianness</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>'big'</em><em> or </em><em>'little'</em><em>, </em><em>optional</em>) – The endianness with which to send the data. Defaults to little endian.</p></li>
-<li><p><strong>signal_domain</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – The name of the domain :attr:<code class="docutils literal notranslate"><span class="pre">signal</span></code> is clocked from. If this value is anything other than
+<li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The width of the signal we’ll relay up to the host, in bits.</p></li>
+<li><p><strong>endpoint_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The endpoint number (not address) this endpoint should respond to.</p></li>
+<li><p><strong>endianness</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a><em>, </em><em>'big'</em><em> or </em><em>'little'</em><em>, </em><em>optional</em>) – The endianness with which to send the data. Defaults to little endian.</p></li>
+<li><p><strong>signal_domain</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a><em>, </em><em>optional</em>) – The name of the domain :attr:<code class="docutils literal notranslate"><span class="pre">signal</span></code> is clocked from. If this value is anything other than
 ‘usb’, the signal will automatically be synchronized to the USB clock domain.</p></li>
 </ul>
 </dd>
@@ -379,7 +374,7 @@ host polls our endpoint.</p></li>
 connecting streams to USB endpoints.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.endpoints.stream.USBStreamInEndpoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoints.stream.</span></span><span class="sig-name descname"><span class="pre">USBStreamInEndpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoints.stream.USBStreamInEndpoint" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoints.stream.</span></span><span class="sig-name descname"><span class="pre">USBStreamInEndpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoints.stream.USBStreamInEndpoint" title="Link to this definition"></a></dt>
 <dd><p>Endpoint interface that transmits a simple data stream to a host.</p>
 <p>This interface is suitable for a single bulk or interrupt endpoint.</p>
 <p>This endpoint interface will automatically generate ZLPs when a stream packet would end without
@@ -401,8 +396,8 @@ a second packet.</p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>endpoint_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The endpoint number (not address) this endpoint should respond to.</p></li>
-<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The maximum packet size for this endpoint. Should match the wMaxPacketSize provided in the
+<li><p><strong>endpoint_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The endpoint number (not address) this endpoint should respond to.</p></li>
+<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The maximum packet size for this endpoint. Should match the wMaxPacketSize provided in the
 USB endpoint descriptor.</p></li>
 </ul>
 </dd>
@@ -411,7 +406,7 @@ USB endpoint descriptor.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.endpoints.stream.USBMultibyteStreamInEndpoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoints.stream.</span></span><span class="sig-name descname"><span class="pre">USBMultibyteStreamInEndpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoints.stream.USBMultibyteStreamInEndpoint" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoints.stream.</span></span><span class="sig-name descname"><span class="pre">USBMultibyteStreamInEndpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoints.stream.USBMultibyteStreamInEndpoint" title="Link to this definition"></a></dt>
 <dd><p>Endpoint interface that transmits a simple data stream to a host.</p>
 <p>This interface is suitable for a single bulk or interrupt endpoint.</p>
 <p>This variant accepts streams with payload sizes that are a multiple of one byte; data is always
@@ -430,9 +425,9 @@ a second packet.</p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>byte_width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The number of bytes to be accepted at once.</p></li>
-<li><p><strong>endpoint_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The endpoint number (not address) this endpoint should respond to.</p></li>
-<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The maximum packet size for this endpoint. Should match the wMaxPacketSize provided in the
+<li><p><strong>byte_width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The number of bytes to be accepted at once.</p></li>
+<li><p><strong>endpoint_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The endpoint number (not address) this endpoint should respond to.</p></li>
+<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The maximum packet size for this endpoint. Should match the wMaxPacketSize provided in the
 USB endpoint descriptor.</p></li>
 </ul>
 </dd>
@@ -441,7 +436,7 @@ USB endpoint descriptor.</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="sol_usb.gateware.usb.usb2.endpoints.stream.USBStreamOutEndpoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoints.stream.</span></span><span class="sig-name descname"><span class="pre">USBStreamOutEndpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoints.stream.USBStreamOutEndpoint" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sol_usb.gateware.usb.usb2.endpoints.stream.</span></span><span class="sig-name descname"><span class="pre">USBStreamOutEndpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_loc_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sol_usb.gateware.usb.usb2.endpoints.stream.USBStreamOutEndpoint" title="Link to this definition"></a></dt>
 <dd><p>Endpoint interface that receives data from the host, and produces a simple data stream.</p>
 <p>This interface is suitable for a single bulk or interrupt endpoint.</p>
 <dl class="field-list simple">
@@ -453,10 +448,10 @@ USB endpoint descriptor.</p></li>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>endpoint_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The endpoint number (not address) this endpoint should respond to.</p></li>
-<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – The maximum packet size for this endpoint. If this there isn’t <cite>max_packet_size</cite> space in
+<li><p><strong>endpoint_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The endpoint number (not address) this endpoint should respond to.</p></li>
+<li><p><strong>max_packet_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – The maximum packet size for this endpoint. If this there isn’t <cite>max_packet_size</cite> space in
 the endpoint buffer, this endpoint will NAK (or participate in the PING protocol.)</p></li>
-<li><p><strong>buffer_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em>, </em><em>optional</em>) – The total amount of data we’ll keep in the buffer; typically two max-packet-sizes or more.
+<li><p><strong>buffer_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a><em>, </em><em>optional</em>) – The total amount of data we’ll keep in the buffer; typically two max-packet-sizes or more.
 Defaults to twice the maximum packet size.</p></li>
 </ul>
 </dd>
